@@ -340,6 +340,7 @@ html {
   content: "X";
   pointer-events: none;
   position: absolute;
+  line-height: 32px;
 }
 
 #epay_main .epay_close_button {
@@ -367,6 +368,7 @@ html {
 #epay_main #epay_paymentinfo {
   max-width: 1280px;
   width: 100%;
+  height: 80px;
   top: 0;
   position: absolute;
   left: 0;
@@ -375,14 +377,24 @@ html {
   display: flex;
   justify-content: flex-end;
   padding: 8px;
+  align-items: center;
 }
 
 #epay_main #epay_paymentinfo ul li {
   display: flex;
+  justify-content: space-between;
+}
+
+#epay_main #epay_paymentinfo ul li:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 #epay_main #epay_paymentinfo ul li label {
   margin-right: 16px;
+}
+
+#epay_main #epay_paymentinfo .total {
+  font-weight: bold;
 }
 
 /* Content */
