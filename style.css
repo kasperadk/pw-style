@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --bg-color: #e3eff2;
   --primary-color: #003f5f;
@@ -9,9 +10,42 @@ body {
   background-color: var(--bg-color);
 }
 
+/* Resetting styles */
+body #epay_main {
+  width: unset;
+  float: unset;
+  position: unset;
+  left: unset;
+  margin-left: unset;
+}
+
+body #epay_header {
+  width: unset;
+  padding-left: unset;
+  padding-right: unset;
+  padding-top: unset;
+}
+
+/* Removing borders */
+#epay_header_top,
+#epay_content_bottom_bottom,
+#epay_main_header {
+  display: none;
+}
+
+#epay_main #epay_main_content,
+#epay_main_footer {
+  background: none;
+}
+
+/* Payment button */
 #epay_main .epay_payment_button {
   background: none;
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
   text-shadow: none;
+}
+
+#epay_main .epay_payment_button:hover {
+  opacity: 0.8;
 }
