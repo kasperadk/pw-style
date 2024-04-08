@@ -235,6 +235,11 @@ body #epay_steps_list li.steps_list_3.currentstep3 span {
   font-family: unset;
   font-size: unset;
   color: unset;
+  padding-left: unset;
+}
+
+body #epay_steps_list li.steps_list_1 span {
+  padding-left: unset;
 }
 
 body #epay_steps_list li {
@@ -420,6 +425,26 @@ html {
   border-radius: 4px;
   border: 1px solid;
   border-color: var(--border-color);
+}
+
+#epay_main #epay_steps_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+#epay_main #epay_steps_list li {
+  background-color: #f8fafc;
+  padding: 16px;
+  border-radius: 4px;
+  color: var(--text-color-muted);
+}
+
+#epay_main .steps_list_1.currentstep1,
+.steps_list_2.currentstep2,
+.steps_list_3.currentstep3 {
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 /* Content Form */
