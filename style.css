@@ -65,9 +65,11 @@ body #epay_company_name {
 body #epay_testmode_message {
   background: unset;
   width: unset;
+  margin: unset;
+  font-family: unset;
 }
 
-body .close_button {
+body .epay_close_button .close_button {
   background: unset;
 }
 
@@ -80,6 +82,8 @@ body #epay_content_bottom_content_left {
   float: unset;
   margin-left: unset;
   margin-right: unset;
+  width: unset;
+  height: unset;
 }
 
 body #epay_content_bottom_content_center {
@@ -91,6 +95,10 @@ body #epay_content_bottom_content_center {
   height: unset;
   color: unset;
   font-size: unset;
+}
+
+body #epay_content_bottom_content_center:hover {
+  color: unset;
 }
 
 body #epay_content_bottom_content_right {
@@ -170,6 +178,35 @@ body #epay_main_content,
 #epay_main #epay_content_bottom {
   max-width: var(--max-width-content);
   margin: 0 auto;
+  padding: 8px;
+}
+
+#epay_main #epay_content_bottom_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#epay_main #epay_content_bottom_content_left {
+  width: 133px;
+  height: 30px;
+}
+
+#epay_main #epay_content_bottom_content_right {
+  display: flex;
+  align-items: center;
+}
+
+#epay_main #epay_content_bottom_secure {
+  margin-left: 16px;
+}
+
+#epay_main #epay_content_bottom_content_center {
+  color: var(--primary-color);
+}
+
+#epay_main #epay_content_bottom_content_center:hover {
+  opacity: 0.8;
 }
 
 #epay_main #epay_content_bottom_language {
@@ -207,4 +244,5 @@ body #epay_main_content,
 #epay_main_content #epay_testmode_message {
   background-color: var(--error-bg);
   border-radius: var(--border-radius);
+  font-weight: bold;
 }
