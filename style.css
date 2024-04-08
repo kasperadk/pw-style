@@ -1,3 +1,17 @@
+:root {
+  --bg-color: #e3eff2;
+  --primary-color: #003f5f;
+  --border-color: #e2e8f0;
+  --border-radius: 4px;
+}
+
 body {
-    background-color: hotpink;
+  background-color: var(--bg-color);
+}
+
+#epay_main .epay_payment_button {
+  background: none;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  text-shadow: none;
 }
