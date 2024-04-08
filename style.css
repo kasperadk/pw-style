@@ -74,6 +74,11 @@ body .epay_close_button {
   margin-top: unset;
 }
 
+body .epay_close_button .close_button {
+  width: unset;
+  height: unset;
+}
+
 body .epay_close_button .close_button,
 body .epay_close_button .close_button:hover {
   background: unset;
@@ -277,14 +282,16 @@ body #epay_main_content,
 
 #epay_main .epay_close_button::after {
   content: "X";
+  pointer-events: none;
+  position: absolute;
 }
 
 #epay_main .epay_close_button {
   margin-right: 0;
   margin-top: 0;
   background-color: #e2e8f0;
+  color: #0f172a;
   display: flex;
-  align-items: center;
   justify-content: center;
   font-size: 18px;
   width: 32px;
