@@ -440,9 +440,9 @@ html {
   color: var(--text-color-muted);
 }
 
-#epay_main .steps_list_1.currentstep1,
-.steps_list_2.currentstep2,
-.steps_list_3.currentstep3 {
+#epay_main #epay_steps_list li.steps_list_1.currentstep1,
+#epay_main #epay_steps_list li.steps_list_2.currentstep2,
+#epay_main #epay_steps_list li.steps_list_3.currentstep3 {
   font-weight: bold;
   color: var(--text-color);
 }
