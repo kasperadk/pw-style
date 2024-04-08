@@ -78,7 +78,8 @@ body #epay_content_bottom_content {
   height: unset;
 }
 
-body #epay_content_bottom_content_left {
+body #epay_content_bottom_content_left,
+body #epay_content_bottom_content #epay_content_bottom_content_left:hover {
   float: unset;
   margin-left: unset;
   margin-right: unset;
@@ -172,6 +173,19 @@ body #epay_paymentinfo ul {
   height: unset;
 }
 
+body .epay_payment_button {
+  background: unset;
+  text-shadow: unset;
+  float: unset;
+  font-family: unset;
+  height: unset;
+  margin-bottom: unset;
+  margin-top: unset;
+  padding-left: unset;
+  text-align: unset;
+  width: unset;
+}
+
 body #epay_steps_list li.steps_list_1,
 body #epay_steps_list li.steps_list_1.currentstep1,
 body #epay_steps_list li.steps_list_1.currentstep2,
@@ -241,6 +255,25 @@ body #epay_main_content,
 #epay_main #epay_content_content {
   max-width: var(--max-width-main);
   margin: 0 auto;
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: var(--border-color);
+}
+
+#epay_main_content .epay_payment_button {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+}
+
+#epay_main_content .epay_payment_button:hover {
+  opacity: 0.8;
+}
+
+/* Content Form */
+#epay_main #epay_content form {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Content bottom */
@@ -281,18 +314,6 @@ body #epay_main_content,
 #epay_main #epay_content_bottom_language {
   width: 24px;
   height: 24px;
-}
-
-/* Payment button */
-#epay_main_content .epay_payment_button {
-  background: none;
-  background-color: var(--primary-color);
-  border-radius: var(--border-radius);
-  text-shadow: none;
-}
-
-#epay_main_content .epay_payment_button:hover {
-  opacity: 0.8;
 }
 
 /* Close button */
