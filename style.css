@@ -1,5 +1,7 @@
 /* Variables */
 :root {
+  --text-color: #020817;
+  --text-color-muted: #475569;
   --bg-color: #e3eff2;
   --primary-color: #003f5f;
   --border-color: #e2e8f0;
@@ -14,6 +16,10 @@ body {
 }
 
 /* "Unsetting" styles */
+body {
+  font-family: unset;
+}
+
 body #epay_main {
   width: unset;
   float: unset;
@@ -234,6 +240,43 @@ body #epay_paymentcards_form {
   min-height: unset;
 }
 
+body #epay_paymentinfo ul li {
+  line-height: unset;
+  height: unset;
+  border-bottom: unset;
+  padding-top: unset;
+}
+
+body #epay_paymentinfo ul li label,
+body #epay_paymentinfo_full ul li label {
+  height: unset;
+  line-height: unset;
+  font-family: unset;
+  color: unset;
+  width: unset;
+  float: unset;
+}
+
+body #epay_paymentinfo ul li p,
+body #epay_paymentinfo_full ul li p {
+  width: unset;
+  color: unset;
+  height: unset;
+  line-height: unset;
+  margin: unset;
+  padding: unset;
+  float: unset;
+  text-align: unset;
+}
+
+body #epay_paymentinfo ul li.total label,
+body #epay_paymentinfo ul li.total p,
+body #epay_paymentinfo_full ul li.total label,
+body #epay_paymentinfo_full ul li.total p {
+  font-family: unset;
+  color: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -247,6 +290,13 @@ body #epay_paymentcards_form {
 body #epay_main_content,
 #epay_main_footer {
   background: none;
+}
+
+html {
+  color: var(--text-color);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* ePay Header */
@@ -275,9 +325,15 @@ body #epay_main_content,
   margin-right: 16px;
 }
 
+#epay_main #epay_header_content_right {
+  max-width: 500px;
+  color: var(--text-color-muted);
+}
+
 #epay_main #epay_company_name {
   font-size: 18px;
   font-weight: bold;
+  color: var(--text-color);
 }
 
 #epay_main .epay_close_button::after {
@@ -290,7 +346,6 @@ body #epay_main_content,
   margin-right: 0;
   margin-top: 0;
   background-color: #e2e8f0;
-  color: #0f172a;
   display: flex;
   justify-content: center;
   font-size: 18px;
@@ -320,6 +375,14 @@ body #epay_main_content,
   display: flex;
   justify-content: flex-end;
   padding: 8px;
+}
+
+#epay_main #epay_paymentinfo ul li {
+  display: flex;
+}
+
+#epay_main #epay_paymentinfo ul li label {
+  margin-right: 16px;
 }
 
 /* Content */
