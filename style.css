@@ -3,6 +3,7 @@
   --bg-color: #e3eff2;
   --primary-color: #003f5f;
   --border-color: #e2e8f0;
+  --error-bg: #fef2f2;
   --border-radius: 4px;
 }
 
@@ -26,26 +27,58 @@ body #epay_header {
   padding-top: unset;
 }
 
+body #epay_content {
+  margin-top: unset;
+  width: unset;
+  padding-left: unset;
+  padding-right: unset;
+  overflow: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
-#epay_main_header {
+#epay_main_header,
+#epay_content_top {
   display: none;
 }
 
-#epay_main #epay_main_content,
+body #epay_main_content,
 #epay_main_footer {
   background: none;
 }
 
 /* Payment button */
-#epay_main .epay_payment_button {
+#epay_main_content .epay_payment_button {
   background: none;
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
   text-shadow: none;
 }
 
-#epay_main .epay_payment_button:hover {
+#epay_main_content .epay_payment_button:hover {
   opacity: 0.8;
+}
+
+/* Close button */
+#epay_main .close_button {
+  background: unset;
+  background-color: #b91c1c;
+  border-radius: 100%;
+}
+
+#epay_main .close_button::after {
+  content: "X";
+}
+
+#epay_main .close_button:hover {
+  opacity: 0.8;
+}
+
+/* Testmode message */
+#epay_main_content #epay_testmode_message {
+  background: unset;
+  width: unset;
+  background-color: var(--error-bg);
+  border-radius: var(--border-radius);
 }
