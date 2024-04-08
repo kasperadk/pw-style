@@ -128,6 +128,71 @@ body #epay_content_bottom_secure {
   float: unet;
 }
 
+body #epay_steps_list {
+  margin: unset;
+  padding: unset;
+  height: unset;
+  text-shadow: unset;
+}
+
+body #epay_paymentcollection {
+  border-bottom: unset;
+  margin-left: unset;
+  margin-right: unset;
+  overflow: unset;
+}
+
+body #epay_paymentfooter {
+  background: unset;
+  margin: unset;
+  overflow: unset;
+  padding: unset;
+  min-height: unset;
+}
+
+body #epay_paymentfooter_info {
+  width: unset;
+  float: unset;
+  font-size: unset;
+}
+
+body #epay_paymentfooter_right {
+  width: unset;
+  float: unset;
+  text-align: unset;
+}
+
+body #epay_paymentinfo {
+  float: unset;
+  width: unset;
+  margin-top: unset;
+}
+
+body #epay_paymentinfo ul {
+  height: unset;
+}
+
+body #epay_steps_list li.steps_list_1,
+body #epay_steps_list li.steps_list_1.currentstep1,
+body #epay_steps_list li.steps_list_1.currentstep2,
+body #epay_steps_list li.steps_list_2,
+body #epay_steps_list li.steps_list_2.currentstep2,
+body #epay_steps_list li.steps_list_2.currentstep3,
+body #epay_steps_list li.steps_list_3,
+body #epay_steps_list li.steps_list_3.currentstep3 {
+  background: unset;
+  width: unset;
+}
+
+body #epay_steps_list li span,
+body #epay_steps_list li.steps_list_1.currentstep1 span,
+body #epay_steps_list li.steps_list_2.currentstep2 span,
+body #epay_steps_list li.steps_list_3.currentstep3 span {
+  font-family: unset;
+  font-size: unset;
+  color: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -148,6 +213,10 @@ body #epay_main_content,
   background-color: #fff;
   margin-bottom: 16px;
   padding: 8px;
+}
+
+#epay_main .epay_company_logo {
+  background-position-x: left !important;
 }
 
 #epay_main #epay_header_content {
