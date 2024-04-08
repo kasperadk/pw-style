@@ -275,7 +275,7 @@ body #epay_main_content,
   font-weight: bold;
 }
 
-#epay_main .close_button::after {
+#epay_main .epay_close_button::after {
   content: "X";
 }
 
@@ -298,8 +298,21 @@ body #epay_main_content,
   height: 100%;
 }
 
-#epay_main .epay_close_button .close-button:hover {
+#epay_main .epay_close_button:hover {
   opacity: 0.8;
+}
+
+#epay_main #epay_paymentinfo {
+  max-width: 1280px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
 }
 
 /* Content */
