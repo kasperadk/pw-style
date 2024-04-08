@@ -69,7 +69,13 @@ body #epay_testmode_message {
   font-family: unset;
 }
 
-body .epay_close_button .close_button {
+body .epay_close_button {
+  margin-right: unset;
+  margin-top: unset;
+}
+
+body .epay_close_button .close_button,
+body .epay_close_button .close_button:hover {
   background: unset;
 }
 
@@ -186,7 +192,7 @@ body .epay_payment_button {
   width: unset;
 }
 
-body .body .epay_payment_button:hover {
+body .epay_payment_button:hover {
   background: unset;
 }
 
@@ -243,6 +249,8 @@ body #epay_main_content,
   background-color: #fff;
   margin-bottom: 16px;
   padding: 8px;
+  border-bottom: 1px solid;
+  border-color: var(--border-color);
 }
 
 #epay_main .epay_company_logo {
@@ -265,6 +273,33 @@ body #epay_main_content,
 #epay_main #epay_company_name {
   font-size: 18px;
   font-weight: bold;
+}
+
+#epay_main .close_button::after {
+  content: "X";
+}
+
+#epay_main .epay_close_button {
+  margin-right: 0;
+  margin-top: 0;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 0 0 0 4px;
+}
+
+#epay_main .epay_close_button .close-button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#epay_main .epay_close_button .close-button:hover {
+  opacity: 0.8;
 }
 
 /* Content */
@@ -320,6 +355,12 @@ body #epay_main_content,
   height: 30px;
 }
 
+#epay_main
+  #epay_content_bottom_content
+  #epay_content_bottom_content_left:hover {
+  opacity: 0.8;
+}
+
 #epay_main #epay_content_bottom_content_right {
   display: flex;
   align-items: center;
@@ -340,20 +381,6 @@ body #epay_main_content,
 #epay_main #epay_content_bottom_language {
   width: 24px;
   height: 24px;
-}
-
-/* Close button */
-#epay_main .close_button {
-  background-color: #b91c1c;
-  border-radius: 100%;
-}
-
-#epay_main .close_button::after {
-  content: "X";
-}
-
-#epay_main .close_button:hover {
-  opacity: 0.8;
 }
 
 /* Testmode message */
