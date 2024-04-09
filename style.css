@@ -356,6 +356,12 @@ body #epay_paymentcards_form ul li {
   height: unset;
 }
 
+body span.info {
+  float: unset;
+  margin-top: unset;
+  margin-left: unset;
+}
+
 /* New styles start here */
 
 html {
@@ -545,6 +551,26 @@ html {
 
 #epay_main .epay_cardholder_input {
   width: 100%;
+}
+
+#epay_main #epay_paymentcollection .epay_cardholder_input,
+#epay_main #epay_paymentcollection .epay_cardno_input {
+  width: 100%;
+}
+
+#epay_main #epay_paymentcollection .epay_cvc_input {
+  width: 100% !important; /* Overriding important rule */
+}
+
+#epay_main #epay_paymentcards_form ul li {
+  position: relative;
+}
+
+#epay_main span.info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 4px;
 }
 
 /* Content bottom */
