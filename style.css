@@ -15,7 +15,7 @@ body {
   background-color: var(--bg-color);
 }
 
-/* "Unsetting" styles */
+/* "Unsetting" current styles */
 body,
 input {
   font-family: unset;
@@ -292,21 +292,6 @@ body #epay_paymentinfo_full ul li.total p {
   color: unset;
 }
 
-/* Removing borders */
-#epay_header_top,
-#epay_content_bottom_bottom,
-#epay_main_header,
-#epay_header_bottom,
-#epay_content_top,
-#epay_content_bottom_top {
-  display: none;
-}
-
-body #epay_main_content,
-#epay_main_footer {
-  background: none;
-}
-
 body #epay_paymentcollection label {
   width: unset;
   float: unset;
@@ -331,6 +316,34 @@ body #epay_paymentcollection input[type="text"],
 body .epay_cardholder_input {
   background: unset;
 }
+
+body .epay_expmonth_input,
+body .epay_cvc_input {
+  width: unset;
+  background: unset;
+}
+
+/* Removing borders */
+#epay_header_top,
+#epay_content_bottom_bottom,
+#epay_main_header,
+#epay_header_bottom,
+#epay_content_top,
+#epay_content_bottom_top {
+  display: none;
+}
+
+body #epay_main_content,
+#epay_main_footer {
+  background: none;
+}
+
+body #epay_paymentcards_form ul li {
+  margin-top: unset;
+  height: unset;
+}
+
+/* New styles start here */
 
 html {
   color: var(--text-color);
@@ -500,7 +513,14 @@ html {
 }
 
 #epay_main #epay_paymentcards_form {
-  margin-bottom: 16pxx;
+  margin-bottom: 16px;
+}
+
+#epay_main #epay_paymentcards_form input {
+  border: 1px solid;
+  border-color: var(--border-color);
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
 }
 
 /* Content bottom */
