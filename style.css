@@ -407,19 +407,19 @@ html {
   color: #cbd5e1;
 }
 
-#epay_main .epay_cardholder_input.valid,
-#epay_main .epay_cardno_input.valid,
-#epay_main .epay_expmonth_input.valid,
-#epay_main .epay_expyear_input.valid,
-#epay_main .epay_cvc_input.valid {
+#epay_main #epay_paymentcards_form .epay_cardholder_input.valid,
+#epay_main #epay_paymentcards_form .epay_cardno_input.valid,
+#epay_main #epay_paymentcards_form .epay_expmonth_input.valid,
+#epay_main #epay_paymentcards_form .epay_expyear_input.valid,
+#epay_main #epay_paymentcards_form .epay_cvc_input.valid {
   border-color: var(--success-color);
 }
 
-#epay_main .epay_cardholder_input.invalid,
-#epay_main .epay_cardno_input.invalid,
-#epay_main .epay_expmonth_input.invalid,
-#epay_main .epay_expyear_input.invalid,
-#epay_main .epay_cvc_input.invalid {
+#epay_main #epay_paymentcards_form .epay_cardholder_input.invalid,
+#epay_main #epay_paymentcards_form .epay_cardno_input.invalid,
+#epay_main #epay_paymentcards_form .epay_expmonth_input.invalid,
+#epay_main #epay_paymentcards_form .epay_expyear_input.invalid,
+#epay_main #epay_paymentcards_form .epay_cvc_input.invalid {
   border-color: var(--error-color);
 }
 
