@@ -16,7 +16,8 @@ body {
 }
 
 /* "Unsetting" styles */
-body {
+body,
+input {
   font-family: unset;
 }
 
@@ -306,6 +307,31 @@ body #epay_main_content,
   background: none;
 }
 
+body #epay_paymentcollection label {
+  width: unset;
+  float: unset;
+  height: unset;
+  line-height: unset;
+  color: unset;
+  font-family: unset;
+}
+
+body #epay_paymentcollection input[type="text"],
+#epay_paymentcollection input[type="tel"] {
+  height: unset;
+  border: unset;
+  width: unset;
+  float: unset;
+  padding-left: unset;
+  padding-right: unset;
+  padding-top: unset;
+  color: unset;
+}
+
+body .epay_cardholder_input {
+  background: unset;
+}
+
 html {
   color: var(--text-color);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -538,4 +564,5 @@ html {
   background-color: var(--error-bg);
   border-radius: var(--border-radius);
   font-weight: bold;
+  margin-bottom: 24px;
 }
