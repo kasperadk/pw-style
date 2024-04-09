@@ -3,7 +3,8 @@
   --text-color: #020817;
   --text-color-muted: #475569;
   --bg-color: #e3eff2;
-  --primary-color: #003f5f;
+  --brand-color: #003f5f;
+  --cta-color: #16a34a;
   --border-color: #e2e8f0;
   --error-bg: #fef2f2;
   --border-radius: 4px;
@@ -538,7 +539,7 @@ html {
 }
 
 #epay_main #epay_steps_list li {
-  background-color: #f8fafc;
+  background-color: #f1f5f9;
   padding: 16px;
   border-radius: 4px;
   color: var(--text-color-muted);
@@ -548,7 +549,8 @@ html {
 #epay_main #epay_steps_list li.steps_list_2.currentstep2,
 #epay_main #epay_steps_list li.steps_list_3.currentstep3 {
   font-weight: bold;
-  color: var(--text-color);
+  color: #fff;
+  background-color: var(--brand-color);
 }
 
 /* Content Form */
@@ -571,7 +573,7 @@ html {
 }
 
 #epay_main .epay_payment_button {
-  background-color: var(--primary-color);
+  background-color: var(--cta-color);
   border-radius: var(--border-radius);
   width: 100%;
   padding: 16px;
@@ -682,7 +684,7 @@ html {
 }
 
 #epay_main #epay_content_bottom_content_center {
-  color: var(--primary-color);
+  color: var(--brand-color);
 }
 
 #epay_main #epay_content_bottom_content_center:hover {
