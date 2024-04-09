@@ -676,7 +676,7 @@ html {
 
 /* Visa / Visa Dankort selector */
 #epay_main #epay_paymentcards_form ul li[id*="visadankort"] {
-  display: grid !important; /* Overruling inline styles */
+  display: grid;
   line-height: unset !important; /* Overruling inline styles */
   grid-template-columns: minmax(0, 90px) minmax(0, 90px);
   font-size: 0; /* Removes legacy labels - are non-clickable and not placed inside any tags  */
