@@ -313,7 +313,20 @@ body #epay_paymentcollection input[type="text"],
   color: unset;
 }
 
-body .epay_cardholder_input {
+body .epay_cardholder_input,
+body .epay_cardholder_input.invalid,
+body .epay_cardholder_input.valid,
+body .epay_cardno_input,
+body .epay_cardno_input.valid,
+body .epay_cardno_input.invalid,
+body .epay_expmonth_input,
+body .epay_expmonth_input.valid,
+body .epay_expmonth_input.invalid,
+body .epay_expyear_input,
+body .epay_expyear_input.valid,
+body .epay_expyear_input.invalid,
+body .epay_cvc_input,
+body .epay_cvc_input.valid body .epay_cvc_input.invalid {
   background: unset;
 }
 
@@ -521,6 +534,17 @@ html {
   border-color: var(--border-color);
   padding: 4px 8px;
   border-radius: var(--border-radius);
+}
+
+#epay_main #epay_paymentcards_form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#epay_main .epay_cardholder_input {
+  width: 100%;
 }
 
 /* Content bottom */
