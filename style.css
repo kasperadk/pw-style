@@ -686,13 +686,17 @@ html {
   grid-column: span 2;
 }
 
-#epay_main #epay_paymentcards_form ul li[id*="visadankort"] span:nth-child(1) {
+#epay_main #epay_paymentcards_form ul li[id*="visadankort"] span:nth-of-type() {
   /* Visa */
   grid-column-start: 1;
   grid-row-start: 2;
 }
 
-#epay_main #epay_paymentcards_form ul li[id*="visadankort"] span:nth-child(2) {
+#epay_main
+  #epay_paymentcards_form
+  ul
+  li[id*="visadankort"]
+  span:nth-of-type(2) {
   /* Visa Dankort */
   grid-column-start: 2;
   grid-row-start: 2;
