@@ -711,6 +711,6 @@ html {
   background-color: var(--error-bg);
   border-radius: var(--border-radius);
   font-weight: bold;
-  max-width: var(--max-width-content);
+  max-width: var(--max-width-main);
   margin: 0 auto 32px auto;
 }
