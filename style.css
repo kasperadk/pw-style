@@ -442,7 +442,7 @@ html {
   padding: 4px;
   border-radius: var(--border-radius);
   background-color: #334155;
-  right: 0;
+  right: 24px;
 }
 
 /* ePay Header */
@@ -704,7 +704,11 @@ html {
   grid-column: span 2;
 }
 
-#epay_main #epay_paymentcards_form ul li[id*="visadankort"] span:nth-of-type() {
+#epay_main
+  #epay_paymentcards_form
+  ul
+  li[id*="visadankort"]
+  span:nth-of-type(1) {
   /* Visa */
   grid-column-start: 1;
   grid-row-start: 2;
