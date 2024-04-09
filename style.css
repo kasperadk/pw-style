@@ -616,6 +616,7 @@ html {
   padding: 8px 12px;
   border-radius: var(--border-radius);
   font-size: 15px;
+  accent-color: var(--brand-color);
 }
 
 #epay_main #epay_paymentcards_form label {
@@ -671,6 +672,61 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Visa / Visa Dankort selector */
+#epay_main #epay_paymentcards_form ul li[id*="visadankort"] {
+  display: grid !important; /* Overruling inline styles */
+  line-height: unset !important; /* Overruling inline styles */
+  grid-template-columns: minmax(0, 90px) minmax(0, 90px);
+  font-size: 0; /* Removes legacy labels - are non-clickable and not placed inside any tags  */
+}
+
+#epay_main #epay_paymentcards_form ul li[id*="visadankort"] label {
+  grid-column: span 2;
+}
+
+#epay_main #epay_paymentcards_form ul li[id*="visadankort"]:nth-child(1) {
+  /* Visa */
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+#epay_main #epay_paymentcards_form ul li[id*="visadankort"]:nth-child(2) {
+  /* Visa Dankort */
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+#epay_main #epay_paymentcards_form ul li[id*="visadankort"] input {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#epay_main #epay_paymentcards_form ul li[id*="visadankort"] input:hover {
+  opacity: 0.8;
+}
+
+#epay_main #epay_paymentcards_form ul li[id*="visadankort"] input::after {
+  margin-left: 20px;
+}
+
+#epay_main
+  #epay_paymentcards_form
+  ul
+  li[id*="visadankort"]
+  input[value="radioButtonVisaDankortVisa"]::after {
+  content: "VISA";
+}
+
+#epay_main
+  #epay_paymentcards_form
+  ul
+  li[id*="visadankort"]
+  input[value="radioButtonVisaDankortDankort"]::after {
+  content: "Dankort";
 }
 
 /* Content bottom */
