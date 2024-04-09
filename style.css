@@ -582,7 +582,7 @@ html {
 }
 
 #epay_main #epay_paymentinfo > div {
-  max-width: 150px;
+  max-width: 200px;
   pointer-events: auto;
 }
 
