@@ -4,7 +4,8 @@
   --text-color-muted: #475569;
   --bg-color: #e3eff2;
   --brand-color: #003f5f;
-  --cta-color: #16a34a;
+  --success-color: #16a34a;
+  --error-color: #b91c1c;
   --border-color: #e2e8f0;
   --error-bg: #fef2f2;
   --border-radius: 4px;
@@ -406,6 +407,22 @@ html {
   color: #cbd5e1;
 }
 
+#epay_main .epay_cardholder_input.valid,
+#epay_main .epay_cardno_input.valid,
+#epay_main .epay_expmonth_input.valid,
+#epay_main .epay_expyear_input.valid,
+#epay_main .epay_cvc_input.valid {
+  border-color: var(--success-color);
+}
+
+#epay_main .epay_cardholder_input.invalid,
+#epay_main .epay_cardno_input.invalid,
+#epay_main .epay_expmonth_input.invalid,
+#epay_main .epay_expyear_input.invalid,
+#epay_main .epay_cvc_input.invalid {
+  border-color: var(--error-color);
+}
+
 #epay_main {
   height: 100%;
 }
@@ -578,7 +595,7 @@ html {
 }
 
 #epay_main .epay_payment_button {
-  background-color: var(--cta-color);
+  background-color: var(--success-color);
   border-radius: var(--border-radius);
   width: 100%;
   padding: 16px;
