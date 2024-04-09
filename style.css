@@ -360,7 +360,9 @@ body .epay_cvc_input {
   background: unset;
 }
 
-body #epay_paymentcollection .epay_cvc_input {
+body #epay_paymentcollection .epay_cvc_input,
+body #epay_paymentcollection .epay_expmonth_input,
+body #epay_paymentcollection .epay_expyear_input {
   width: unset !important; /* Overriding important rule */
 }
 
@@ -632,7 +634,7 @@ html {
 }
 
 #epay_main #epay_paymentcards_form ul li[id*="exp_li"] {
-  width: 48%;
+  width: calc(50% - 12px);
   display: inline-grid;
   grid-template-columns: 1fr 10px 1fr;
 }
@@ -642,8 +644,16 @@ html {
 }
 
 #epay_main #epay_paymentcards_form ul li[id*="cvc_li"] {
-  width: 48%;
+  width: calc(50% - 12px);
   display: inline-flex;
+  float: right;
+}
+
+#epay_main #epay_exp_seperator {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Content bottom */
