@@ -395,6 +395,20 @@ body .epay_tooltip {
   line-height: unset;
 }
 
+body .epay_cardholder_customvalidation,
+body .epay_cardno_customvalidation,
+body .epay_expmonth_customvalidation,
+body .epay_expyear_customvalidation,
+body .epay_cvc_customvalidation {
+  float: unset;
+  margin-top: unset;
+  height: unset;
+  text-align: unset;
+  width: unset;
+  background: unset;
+  margin-left: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -443,6 +457,20 @@ html {
   border-radius: var(--border-radius);
   background-color: #334155;
   right: 24px;
+}
+
+#epay_main .epay_cardholder_customvalidation,
+#epay_main .epay_cardno_customvalidation,
+#epay_main .epay_expmonth_customvalidation,
+#epay_main .epay_expyear_customvalidation,
+#epay_main .epay_cvc_customvalidation {
+  background-color: var(--error-color);
+  padding: 4px;
+  top: 3px;
+  right: 30px;
+  border-radius: 4px 4px 0 0;
+  font-weight: bold;
+  color: #fff;
 }
 
 /* ePay Header */
