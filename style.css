@@ -653,7 +653,7 @@ html {
 #epay_main #epay_paymentcards_form ul li[id*="exp_li"] {
   width: calc(50% - 12px);
   display: inline-grid;
-  grid-template-columns: 1fr 10px 1fr;
+  grid-template-columns: minmax(0, 1fr) 20px minmax(0, 1fr);
 }
 
 #epay_main #epay_paymentcards_form ul li[id*="exp_li"] label {
