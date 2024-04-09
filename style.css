@@ -431,6 +431,10 @@ body #epay_languages_list {
   float: unset;
 }
 
+body #epay_paymentfooter_info .ordertext {
+  margin-top: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -602,6 +606,10 @@ html {
 }
 
 /* Content */
+#epay_main #epay_content_content {
+  padding: 0 8px;
+}
+
 #epay_main #epay_main_content {
   height: 100%;
   display: flex;
@@ -628,12 +636,13 @@ html {
 }
 
 #epay_main #epay_steps_list li {
-  background-color: #f1f5f9;
+  background-color: #f8fafc;
   padding: 16px;
   border-radius: 4px;
   text-align: center;
   font-size: 14px;
   color: var(--text-color-muted);
+  user-select: none;
 }
 
 #epay_main #epay_steps_list li.steps_list_1.currentstep1,
@@ -656,12 +665,14 @@ html {
   max-width: var(--max-width-main);
   margin: 32px auto;
   padding: 32px;
-  border-radius: 4px;
-  border: 1px solid;
-  border-color: var(--border-color);
   width: 100%;
   background-color: #fff;
   box-sizing: border-box;
+  order: 2;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-radius: 0 0 4px 4px;
+  border-color: var(--border-color);
 }
 
 #epay_main .epay_payment_button {
@@ -854,12 +865,24 @@ html {
   margin-top: 32px;
   align-items: center;
   max-width: var(--max-width-main);
-  margin: 0 auto;
+  margin: 32px auto 0 auto;
   width: 100%;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  background-color: #f1f5f9;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-top: 1px solid;
+  border-radius: 4px 4px 0 0;
+  border-color: var(--border-color);
+  font-size: 14px;
+  color: #475569;
 }
 
 #epay_main #epay_content_bottom_language.active,
-#epay_main #epay_content_bottom_language:hover {
+#epay_main #epay_content_bottom_language:hover,
+#epay_main #epay_languages_list li.active,
+#epay_main #epay_languages_list li:hover {
   opacity: 0.8;
 }
 
