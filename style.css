@@ -411,7 +411,7 @@ html {
 /* ePay Header */
 #epay_main #epay_header {
   background-color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   padding: 8px;
   border-bottom: 1px solid;
   border-color: var(--border-color);
@@ -527,7 +527,7 @@ html {
 }
 
 #epay_steps {
-  max-width: var(--max-width-content);
+  max-width: var(--max-width-main);
   margin: 0 auto;
   width: 100%;
 }
@@ -564,12 +564,13 @@ html {
   flex-direction: column;
   max-width: var(--max-width-main);
   margin: 0 auto;
-  padding: 24px;
+  padding: 32px;
   border-radius: 4px;
   border: 1px solid;
   border-color: var(--border-color);
   width: 100%;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 #epay_main .epay_payment_button {
@@ -650,7 +651,8 @@ html {
 /* Content bottom */
 #epay_main #epay_content_bottom {
   max-width: var(--max-width-content);
-  margin: 0 auto;
+  width: 100%;
+  margin: 32px auto 0 auto;
   padding: 8px;
 }
 
