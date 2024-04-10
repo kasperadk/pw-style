@@ -981,7 +981,12 @@ html {
   }
   #epay_main #epay_paymentinfo ul li {
     flex-direction: column;
+    margin: 0 auto;
   }
+  #epay_main #epay_paymentinfo ul li:not(:last-child) {
+    margin-bottom: 0;
+  }
+
   #epay_main #epay_header {
     margin-bottom: 16px;
   }
