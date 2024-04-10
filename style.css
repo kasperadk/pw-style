@@ -503,7 +503,7 @@ html {
 #epay_main #epay_header {
   background-color: #fff;
   margin-bottom: 32px;
-  padding: 8px;
+  padding: 8px 16px;
   border-bottom: 1px solid;
   border-color: var(--border-color);
 }
@@ -545,14 +545,17 @@ html {
 
 #epay_main .epay_close_button {
   margin-right: 0;
-  margin-top: 0;
-  background-color: #e2e8f0;
   display: flex;
   justify-content: center;
   font-size: 18px;
   width: 32px;
   height: 32px;
   border-radius: 0 0 0 4px;
+  margin-top: 96px;
+  border: 1px solid;
+  border-color: var(--border-color);
+  background: #fff;
+  border-top: 0;
 }
 
 #epay_main .epay_close_button .close_button {
@@ -568,7 +571,7 @@ html {
 #epay_main #epay_paymentinfo {
   max-width: var(--max-width-content);
   width: 100%;
-  height: 80px;
+  height: 97px;
   top: 0;
   position: absolute;
   left: 0;
@@ -576,9 +579,10 @@ html {
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
-  padding: 8px;
+  padding: 8px 16px;
   align-items: center;
   pointer-events: none;
+  box-sizing: border-box;
 }
 
 #epay_main #epay_paymentinfo > div {
@@ -607,7 +611,7 @@ html {
 
 /* Content */
 #epay_main #epay_content_content {
-  padding: 0 8px;
+  padding: 0 16px;
 }
 
 #epay_main #epay_main_content {
@@ -663,7 +667,7 @@ html {
   display: flex;
   flex-direction: column;
   max-width: var(--max-width-main);
-  margin: 32px auto;
+  margin: 0 auto;
   padding: 32px;
   width: 100%;
   background-color: #fff;
@@ -823,7 +827,7 @@ html {
   max-width: var(--max-width-content);
   width: 100%;
   margin: 32px auto 0 auto;
-  padding: 8px;
+  padding: 8px 16px;
 }
 
 #epay_main #epay_content_bottom_content {
