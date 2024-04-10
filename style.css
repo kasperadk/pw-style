@@ -725,6 +725,26 @@ html {
   margin-top: 4px;
 }
 
+#epay_main span.info img {
+  opacity: 0; /* Hide the image */
+}
+
+#epay_main span.info::after {
+  content: "i";
+  position: absolute;
+  left: 0px;
+  background-color: #94a3b8;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  pointer-events: none;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
 #epay_main .cardnumber_test {
   height: 55px;
 }
