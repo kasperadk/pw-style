@@ -1180,6 +1180,22 @@ html {
   font-size: 14px;
 }
 
+#epay_main #epay_accept ul li.doubleline.last {
+  margin-top: 8px;
+}
+
+#epay_main #epay_payment_accepted_header::before {
+  /* Checkmark */
+  content: "";
+  display: block;
+  transform: rotate(45deg);
+  height: 36px;
+  width: 18px;
+  border-bottom: 10px solid var(--success-color);
+  border-right: 10px solid var(--success-color);
+  margin: 0 auto 6px auto;
+}
+
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
   #epay_main #epay_header_content_right {
@@ -1290,6 +1306,25 @@ html {
   #epay_main #epay_accept {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  #epay_main #epay_payment_accepted,
+  #epay_main #epay_accept {
+    padding: 16px;
+  }
+
+  #epay_main #epay_payment_accepted_header {
+    font-size: 20px;
+  }
+
+  #epay_main #epay_accept + #epay_paymentfooter #epay_paymentfooter_info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #epay_main #epay_accept_info_right,
+  #epay_main #epay_accept_info_left {
+    text-align: center;
   }
 
   /*  💣💣💣💣💣🧨🧨🧨🧨🧨 TEMPORARY FOR TESTING -- REMOVE 💣💣💣💣💣🧨🧨🧨🧨🧨 */
