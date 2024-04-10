@@ -1332,3 +1332,15 @@ html {
     display: none !important;
   }
 }
+
+@media print {
+  #epay_paymentfooter {
+    display: none;
+  }
+  .epay_payment_accepted_return {
+    display: none;
+  }
+  .epay_close_button {
+    display: none;
+  }
+}
