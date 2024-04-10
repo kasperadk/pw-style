@@ -470,6 +470,80 @@ body #epay_loader_message {
   display: none;
 }
 
+body #epay_payment_accepted {
+  height: unset;
+  margin-left: unset;
+  margin-right: unset;
+}
+
+body #epay_payment_accepted_header {
+  background: unset;
+  height: unset;
+  line-height: unset;
+  padding-left: unset;
+  margin-top: unset;
+  width: unset;
+  float: unset;
+  font-family: unset;
+  font-size: unset;
+}
+
+body .epay_payment_accepted_return {
+  float: unset;
+  margin-top: unset;
+  width: unset;
+  line-height: unset;
+  text-align: unset;
+}
+
+.epay_payment_return_button {
+  width: unset;
+  height: unset;
+  background: unset;
+  text-align: unset;
+  padding-left: unset;
+  line-height: unset;
+  text-shadow: unset;
+}
+
+body .epay_payment_return_button:hover {
+  background: unset;
+}
+
+body #epay_accept {
+  border-top: unset;
+  border-bottom: unset;
+  margin-left: unset;
+  margin-right: unset;
+  overflow: unset;
+  padding-bottom: unset;
+}
+
+body #epay_accept_info_left,
+body #epay_accept_info_right {
+  width: unset;
+  float: unset;
+}
+
+body #epay_accept_info_left ul li,
+body #epay_accept_info_right ul li {
+  padding-top: unset;
+  text-align: unset;
+  color: unset;
+  font-size: unset;
+  height: unset;
+  line-height: unset;
+  border-bottom: unset;
+}
+
+body #epay_accept_info_left ul li label,
+body #epay_accept_info_right ul li label {
+  text-align: unset;
+  float: unset;
+  color: unset;
+  line-height: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
