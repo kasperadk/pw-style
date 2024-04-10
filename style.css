@@ -977,7 +977,7 @@ html {
     flex-direction: column;
   }
   #epay_main #epay_header {
-    margin-bottom: 80px;
+    margin-bottom: 72px;
   }
   #epay_main #epay_steps_list {
     grid-template-columns: 1fr;
