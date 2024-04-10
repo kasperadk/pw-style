@@ -542,11 +542,9 @@ html {
   padding: 32px;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #epay_main #epay_loader_top /* Used at "loader-animation"-container */ {
