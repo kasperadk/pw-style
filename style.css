@@ -556,6 +556,7 @@ html {
   border-color: var(--border-color);
   background: #fff;
   border-top: 0;
+  border-right: 0;
 }
 
 #epay_main .epay_close_button .close_button {
@@ -848,12 +849,14 @@ html {
   width: 100%;
   margin: 32px auto 0 auto;
   padding: 8px 16px;
+  box-sizing: border-box;
 }
 
 #epay_main #epay_content_bottom_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 
 #epay_main #epay_content_bottom_content_left,
@@ -930,4 +933,20 @@ html {
   font-weight: bold;
   max-width: var(--max-width-main);
   margin: 0 auto 32px auto;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  #epay_main #epay_header_content_right {
+    font-size: 0; /* Hide company description. Not inside any specific tag */
+  }
+  #epay_main #epay_header_content {
+    flex-direction: column;
+  }
+  #epay_main #epay_header_content_left {
+    margin-right: 0;
+  }
+  #epay_main .epay_close_button {
+    margin-top: 0;
+  }
 }
