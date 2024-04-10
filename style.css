@@ -435,6 +435,37 @@ body #epay_paymentfooter_info .ordertext {
   margin-top: unset;
 }
 
+body #epay_loader {
+  width: unset;
+  position: unset;
+  left: unset;
+  margin-left: unset;
+  display: unset;
+}
+
+body #epay_loader_content {
+  height: unset;
+  background: unset;
+  text-align: unset;
+}
+
+body #epay_loader img {
+  display: none;
+}
+
+body #epay_loader_top {
+  height: unset;
+  background: unset;
+}
+
+body #epay_loader_bottom {
+  display: none;
+}
+
+#epay_main #epay_loader #epay_loader_content br {
+  display: none;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -497,6 +528,44 @@ html {
   border-radius: 4px 4px 0 0;
   font-weight: bold;
   color: #fff;
+}
+
+#epay_main #epay_loader {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width-main);
+  margin: 0 auto;
+  padding: 32px;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: var(--border-color);
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+#epay_main #epay_loader_top {
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: var(--brand-color);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ePay Header */
@@ -983,6 +1052,10 @@ html {
     flex-direction: column;
     margin: 0 auto;
   }
+  #epay_main #epay_paymentinfo ul li label {
+    margin-right: 0;
+  }
+
   #epay_main #epay_paymentinfo ul li:not(:last-child) {
     margin-bottom: 0;
   }
