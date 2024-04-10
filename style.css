@@ -976,9 +976,6 @@ html {
   #epay_main #epay_paymentinfo ul li {
     flex-direction: column;
   }
-  #epay_main #epay_steps {
-    margin-top: 40px;
-  }
   #epay_main #epay_header {
     margin-bottom: 80px;
   }
@@ -990,6 +987,7 @@ html {
     margin-top: 16px;
     padding: 16px;
     gap: 8px;
+    flex-direction: column;
   }
   #epay_main_content #epay_testmode_message {
     margin-bottom: 16px;
