@@ -958,10 +958,11 @@ html {
     display: none;
   }
   #epay_main #epay_paymentinfo {
-    top: 40px;
+    padding: 0;
     height: unset;
-    background-color: #fff;
+    padding-bottom: 16px;
     border-bottom: 1px solid;
+    margin-bottom: 16px;
     border-color: var(--border-color);
   }
   #epay_main #epay_paymentinfo > div {
@@ -972,12 +973,13 @@ html {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    text-align: center;
   }
   #epay_main #epay_paymentinfo ul li {
     flex-direction: column;
   }
   #epay_main #epay_header {
-    margin-bottom: 72px;
+    margin-bottom: 16px;
   }
   #epay_main #epay_steps_list {
     grid-template-columns: 1fr;
