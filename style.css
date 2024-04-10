@@ -862,6 +862,7 @@ html {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  color: var(--text-color-muted);
 }
 
 #epay_main #epay_content_bottom_content_left,
@@ -951,7 +952,7 @@ html {
     margin-right: 0;
   }
   #epay_main .epay_close_button {
-    display: none;
+    display: none !important;
   }
   #epay_main .epay_company_logo {
     display: none;
@@ -987,5 +988,54 @@ html {
   }
   #epay_main #epay_paymentfooter {
     margin-top: 16px;
+    padding: 16px;
+    gap: 8px;
+  }
+  #epay_main_content #epay_testmode_message {
+    margin-bottom: 16px;
+  }
+  #epay_main #epay_steps_list li {
+    padding: 8px;
+  }
+
+  #epay_main #epay_paymentfooter_info {
+    display: flex;
+    width: 100%;
+  }
+
+  #epay_main #epay_paymentfooter_info div:nth-child(2) {
+    padding-left: 8px;
+    margin-left: auto;
+  }
+
+  #epay_main #epay_paymentfooter_info div:nth-child(2) {
+    padding-left: 8px;
+    margin-left: auto;
+  }
+  #epay_main #epay_paymentfooter_cardlogos img {
+    max-width: 40px;
+    padding-left: 4px;
+  }
+
+  #epay_main #epay_paymentcollection {
+    padding: 16px;
+  }
+
+  #epay_main #epay_cvc_help img {
+    display: none;
+  }
+
+  #epay_main span.info {
+    display: none;
+  }
+
+  #epay_main #epay_content_bottom_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /*  💣💣💣💣💣🧨🧨🧨🧨🧨 TEMPORARY FOR TESTING -- REMOVE 💣💣💣💣💣🧨🧨🧨🧨🧨 */
+  #epay_main_content #epay_testmode_message {
+    display: none !important;
   }
 }
