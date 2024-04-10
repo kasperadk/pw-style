@@ -544,6 +544,16 @@ body #epay_accept_info_right ul li label {
   line-height: unset;
 }
 
+body #epay_accept ul li.doubleline {
+  margin-top: unset;
+  line-height: unset;
+  height: unset;
+}
+
+body #epay_accept_info_right .epay_accept_info_amount {
+  font-weight: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -608,6 +618,7 @@ html {
   color: #fff;
 }
 
+/* Loader */
 #epay_main #epay_loader {
   display: flex;
   flex-direction: column;
@@ -641,6 +652,15 @@ html {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Testmode message */
+#epay_main_content #epay_testmode_message {
+  background-color: var(--error-bg);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  max-width: var(--max-width-main);
+  margin: 0 auto 32px auto;
 }
 
 /* ePay Header */
@@ -1075,13 +1095,89 @@ html {
   border-color: var(--border-color);
 }
 
-/* Testmode message */
-#epay_main_content #epay_testmode_message {
-  background-color: var(--error-bg);
-  border-radius: var(--border-radius);
-  font-weight: bold;
+/* Receipt page */
+#epay_main #epay_payment_accepted {
+  display: flex;
+  flex-direction: column;
   max-width: var(--max-width-main);
-  margin: 0 auto 32px auto;
+  margin: 32px auto 0 auto;
+  padding: 32px;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid;
+  border-color: var(--border-color);
+  border-bottom: none;
+}
+
+#epay_main #epay_accept {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width-main);
+  margin: 0 auto;
+  padding: 32px;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid;
+  border-color: var(--border-color);
+  border-top: none;
+}
+
+#epay_main .epay_payment_accepted_return {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+#epay_main .epay_payment_return_button {
+  background-color: var(--success-color);
+  padding: 8px 16px;
+  font-size: 18px;
+  border-radius: var(--border-radius);
+  transition: opacity 0.3s;
+}
+
+#epay_main .epay_payment_return_button:hover {
+  opacity: 0.8M;
+}
+
+#epay_main #epay_payment_accepted_header {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#epay_main #epay_accept_info_right,
+#epay_main #epay_accept_info_left {
+  padding: 16px;
+  border-radius: var(--border-radius);
+  background-color: #f8fafc;
+  border: 2px dashed;
+  border-color: var(--border-color);
+}
+
+#epay_main #epay_accept_info_right ul,
+#epay_main #epay_accept_info_left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#epay_main #epay_accept_info_left ul li label,
+#epay_main #epay_accept_info_right ul li label {
+  display: block;
+  font-weight: bold;
+}
+
+#epay_main #epay_accept {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  font-size: 14px;
 }
 
 /* Responsive styles */
@@ -1189,6 +1285,11 @@ html {
   #epay_main #epay_content_bottom_content {
     flex-direction: column;
     text-align: center;
+  }
+
+  #epay_main #epay_accept {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   /*  💣💣💣💣💣🧨🧨🧨🧨🧨 TEMPORARY FOR TESTING -- REMOVE 💣💣💣💣💣🧨🧨🧨🧨🧨 */
