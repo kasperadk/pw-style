@@ -1388,6 +1388,12 @@ html {
     text-align: center;
   }
 
+  #epay_main #epay_languages_list {
+    grid-template-columns: repeat(4, 1fr);
+    right: -120px;
+    bottom: 16px;
+  }
+
   /*  💣💣💣💣💣🧨🧨🧨🧨🧨 TEMPORARY FOR TESTING -- REMOVE 💣💣💣💣💣🧨🧨🧨🧨🧨 */
   #epay_main_content #epay_testmode_message {
     display: none !important;
