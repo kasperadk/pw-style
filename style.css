@@ -958,6 +958,10 @@ html {
     display: none;
   }
   #epay_main #epay_paymentinfo {
+    position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
     padding: 0;
     height: unset;
     padding-bottom: 16px;
