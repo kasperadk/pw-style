@@ -554,6 +554,37 @@ body #epay_accept_info_right .epay_accept_info_amount {
   font-weight: unset;
 }
 
+body #epay_error_top,
+body #epay_error_bottom {
+  background: unset;
+  height: unset;
+}
+
+body #epay_error_body {
+  background: unset;
+}
+
+body #epay_error_header {
+  color: unset;
+  font-family: unset;
+  margin-bottom: unset;
+}
+
+body #epay_error_text {
+  color: unset;
+}
+
+body .epay_error_button {
+  width: unset;
+  height: unset;
+  color: unset;
+  background: unset;
+}
+
+body .epay_error_button:hover {
+  background: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -652,6 +683,36 @@ html {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Error message */
+#epay_main #epay_error {
+  background-color: var(--error-bg);
+  padding: 32px;
+  border-radius: var(--border-radius);
+}
+#epay_main #epay_error_header {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+#epay_main #epay_error_text {
+  font-size: 14px;
+}
+
+#epay_main .epay_error_button {
+  padding: 8px 16px;
+  border: 0;
+  margin-top: 8px;
+  background-color: var(--brand-color);
+  color: #fff;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+#epay_main .epay_error_button:hover {
+  opacity: 0.8;
 }
 
 /* Testmode message */
