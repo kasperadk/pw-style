@@ -526,7 +526,7 @@ html {
 }
 
 #epay_main #epay_header_content_right {
-  max-width: 500px;
+  max-width: 450px;
   color: var(--text-color-muted);
 }
 
@@ -586,7 +586,7 @@ html {
 }
 
 #epay_main #epay_paymentinfo > div {
-  max-width: 200px;
+  max-width: 250px;
   pointer-events: auto;
 }
 
