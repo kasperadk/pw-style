@@ -947,6 +947,31 @@ html {
     margin-right: 0;
   }
   #epay_main .epay_close_button {
-    margin-top: 0;
+    display: none;
+  }
+  #epay_main .epay_company_logo {
+    display: none;
+  }
+  #epay_main #epay_paymentinfo {
+    top: 40px;
+    height: unset;
+    background-color: #fff;
+    border-bottom: 1px solid;
+    border-color: var(--border-color);
+  }
+  #epay_main #epay_paymentinfo > div {
+    max-width: unset;
+    width: 100%;
+  }
+  #epay_main #epay_paymentinfo ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #epay_main #epay_paymentinfo ul li {
+    flex-direction: column;
+  }
+  #epay_main #epay_steps {
+    margin-top: 40px;
   }
 }
