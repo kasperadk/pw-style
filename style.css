@@ -982,6 +982,9 @@ html {
 #epay_main #epay_header_content_right {
   max-width: 450px;
   color: var(--text-color-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 #epay_main #epay_company_name {
