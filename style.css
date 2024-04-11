@@ -689,6 +689,12 @@ body .epay_paymentmethod .epay_payment_goto .epay_payment_goto_text {
   padding-top: unset;
   text-align: unset;
   width: unset;
+  color: unset;
+}
+
+body .epay_paymentmethod .epay_payment_goto .epay_payment_goto_text {
+  /* Hide unnecessary label next to payment logo */
+  font-size: 0;
 }
 
 body
@@ -790,14 +796,6 @@ body #epay_notpaymentcard_form table tr td label {
   width: unset;
   line-height: unset;
   height: unset;
-}
-
-body #epay_main .epay_paymentmethod .epay_payment_logos {
-  line-height: unset;
-  float: unset;
-  color: unset;
-  font-family: unset;
-  font-size: 0; /* Hide the label next to the logo */
 }
 
 /* Removing borders */
@@ -1567,7 +1565,7 @@ html {
 }
 
 #epay_main .epay_payment_goto img:not(:first-of-type) {
-  padding-left: 8px;
+  padding-left: 16px;
 }
 
 /* Responsive styles */
@@ -1717,6 +1715,9 @@ html {
 
   #epay_main a.epay_change_paymentmethod {
     margin: 4px auto 0 auto;
+  }
+  #epay_main .epay_payment_goto img:not(:first-of-type) {
+    padding-left: 8px;
   }
 }
 
