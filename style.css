@@ -233,8 +233,23 @@ body #epay_steps_list li.steps_list_3.currentstep3 {
 
 body #epay_steps_list li span,
 body #epay_steps_list li.steps_list_1.currentstep1 span,
+body #epay_steps_list li.steps_list_1.currentstep1 span a,
+body #epay_steps_list li.steps_list_1.currentstep2 span,
+body #epay_steps_list li.steps_list_1.currentstep2 span a,
+body #epay_steps_list li.steps_list_1.currentstep3 span,
+body #epay_steps_list li.steps_list_1.currentstep3 span a,
+body #epay_steps_list li.steps_list_2.currentstep1 span,
+body #epay_steps_list li.steps_list_2.currentstep1 span a,
 body #epay_steps_list li.steps_list_2.currentstep2 span,
-body #epay_steps_list li.steps_list_3.currentstep3 span {
+body #epay_steps_list li.steps_list_2.currentstep2 span a,
+body #epay_steps_list li.steps_list_2.currentstep3 span,
+body #epay_steps_list li.steps_list_2.currentstep3 span a,
+body #epay_steps_list li.steps_list_3.currentstep1 span,
+body #epay_steps_list li.steps_list_3.currentstep1 span a,
+body #epay_steps_list li.steps_list_3.currentstep2 span,
+body #epay_steps_list li.steps_list_3.currentstep2 span a,
+body #epay_steps_list li.steps_list_3.currentstep3 span,
+body #epay_steps_list li.steps_list_3.currentstep3 span a {
   font-family: unset;
   font-size: unset;
   color: unset;
@@ -679,6 +694,10 @@ body .epay_payment_goto_button span {
   color: unset;
   font-family: unset;
   text-shadow: unset;
+}
+
+body #creditCardInfo {
+  display: none;
 }
 
 /* Removing borders */
@@ -1196,7 +1215,7 @@ html {
   max-width: var(--max-width-content);
   width: 100%;
   margin: 32px auto 0 auto;
-  padding: 8px 16px;
+  padding: 16px;
   box-sizing: border-box;
 }
 
@@ -1404,6 +1423,10 @@ html {
   border-color: var(--brand-color);
 }
 
+#epay_main .epay_payment_goto img:not(:first-of-type) {
+  padding-left: 8px;
+}
+
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
   #epay_main #epay_header_content_right {
@@ -1535,6 +1558,10 @@ html {
     grid-template-columns: repeat(4, 1fr);
     right: -120px;
     bottom: 16px;
+  }
+
+  #epay_main .epay_payment_goto img {
+    max-height: 24px;
   }
 
   /*  💣💣💣💣💣🧨🧨🧨🧨🧨 TEMPORARY FOR TESTING -- REMOVE 💣💣💣💣💣🧨🧨🧨🧨🧨 */
