@@ -605,6 +605,10 @@ body .epay_paymentmethod.first {
   border-top: unset;
 }
 
+body .epay_paymentmethod.last {
+  height: unset;
+}
+
 body .epay_paymentmethod {
   height: unset;
   border-top: unset;
@@ -737,7 +741,7 @@ html {
   top: 3px;
   right: 30px;
   border-radius: 4px 4px 0 0;
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
 }
 
@@ -784,7 +788,7 @@ html {
   border-radius: var(--border-radius);
 }
 #epay_main #epay_error_header {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   padding-bottom: 8px;
 }
@@ -811,7 +815,7 @@ html {
 #epay_main_content #epay_testmode_message {
   background-color: var(--error-bg);
   border-radius: var(--border-radius);
-  font-weight: bold;
+  font-weight: 600;
   max-width: var(--max-width-main);
   margin: 0 auto 32px auto;
 }
@@ -849,7 +853,7 @@ html {
 
 #epay_main #epay_company_name {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--text-color);
 }
 
@@ -924,7 +928,7 @@ html {
 }
 
 #epay_main #epay_paymentinfo .total {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Content */
@@ -970,7 +974,7 @@ html {
 #epay_main #epay_steps_list li.steps_list_1.currentstep1,
 #epay_main #epay_steps_list li.steps_list_2.currentstep2,
 #epay_main #epay_steps_list li.steps_list_3.currentstep3 {
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
   background-color: var(--brand-color);
 }
@@ -1004,7 +1008,7 @@ html {
   padding: 16px;
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1;
   transition: opacity 0.3s;
 }
@@ -1025,7 +1029,7 @@ html {
 #epay_main #epay_paymentcards_form label {
   display: block;
   margin-bottom: 8px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
 }
 
@@ -1065,7 +1069,7 @@ html {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #epay_main .cardnumber_test {
@@ -1322,7 +1326,7 @@ html {
 
 #epay_main #epay_payment_accepted_header {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -1345,7 +1349,7 @@ html {
 #epay_main #epay_accept_info_left ul li label,
 #epay_main #epay_accept_info_right ul li label {
   display: block;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #epay_main #epay_accept {
@@ -1393,6 +1397,7 @@ html {
   font-size: 18px;
   flex-direction: column-reverse;
   gap: 16px;
+  font-weight: 600;
 }
 
 #epay_main .epay_paymentmethod:hover {
