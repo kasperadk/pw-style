@@ -1705,6 +1705,9 @@ html {
   #epay_main #epay_paymentcards_form input {
     padding: 8px 12px;
   }
+  #epay_main .epay_payment_goto {
+    gap: 8px;
+  }
 }
 
 @media print {
