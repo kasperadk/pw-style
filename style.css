@@ -3,6 +3,10 @@
   display: none !important;
 }
 
+body #creditCardInfo {
+  display: none !important;
+}
+
 /* Variables */
 :root {
   --text-color: #020817;
@@ -345,6 +349,7 @@ body span.info {
   float: unset;
   margin-top: unset;
   margin-left: unset;
+  cursor: unset;
 }
 
 body #epay_paymentcards_form ul li span {
@@ -573,6 +578,15 @@ body #epay_accept ul li.doubleline {
 
 body #epay_accept_info_right .epay_accept_info_amount {
   font-weight: unset;
+}
+
+body #epay_error {
+  margin: unset;
+  left: unset;
+  top: unset;
+  margin-left: unset;
+  margin-top: unset;
+  width: unset;
 }
 
 body #epay_error_top,
@@ -878,6 +892,16 @@ html {
   background-color: var(--error-bg);
   padding: 32px;
   border-radius: var(--border-radius);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  max-width: 700px;
+  max-height: 500px;
 }
 #epay_main #epay_error_header {
   font-weight: 600;
@@ -1140,6 +1164,7 @@ html {
   right: 0;
   margin-top: 4px;
   transition: opacity 0.3s;
+  cursor: help;
 }
 
 #epay_main span.info:hover {
@@ -1172,7 +1197,7 @@ html {
 
 #epay_main #epay_cvc_help {
   position: absolute;
-  top: 32px;
+  top: 37px;
   right: 8px;
   width: 36px;
 }
