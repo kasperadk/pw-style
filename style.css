@@ -695,6 +695,7 @@ body .epay_paymentmethod .epay_payment_goto .epay_payment_goto_text {
   text-align: unset;
   width: unset;
   color: unset;
+  line-height: unset;
 }
 
 body .epay_paymentmethod .epay_payment_goto .epay_payment_goto_text {
