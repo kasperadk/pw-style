@@ -927,8 +927,20 @@ html {
 }
 
 #epay_main #epay_paymentinfo > div {
-  max-width: 250px;
-  pointer-events: auto;
+  max-width: var(--max-width-content);
+  width: 100%;
+  height: 97px;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 16px;
+  align-items: center;
+  pointer-events: none;
+  box-sizing: border-box;
 }
 
 #epay_main #epay_paymentinfo ul li {
@@ -1394,6 +1406,8 @@ html {
   margin: 0 auto 6px auto;
 }
 
+/* Step 2: Not credit card (Other Payment options) */
+
 /* Select payment method page */
 #epay_main .epay_paymentmethod {
   display: flex;
@@ -1444,7 +1458,7 @@ html {
   #epay_main .epay_company_logo {
     display: none;
   }
-  #epay_main #epay_paymentinfo {
+  #epay_main #epay_paymentinfo > div {
     position: unset;
     top: unset;
     left: unset;
