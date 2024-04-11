@@ -792,6 +792,14 @@ body #epay_notpaymentcard_form table tr td label {
   height: unset;
 }
 
+body #epay_main .epay_paymentmethod .epay_payment_logos {
+  line-height: unset;
+  float: unset;
+  color: unset;
+  font-family: unset;
+  font-size: 0; /* Hide the label next to the logo */
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
