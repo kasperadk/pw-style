@@ -601,6 +601,82 @@ body a.epay_change_paymentmethod:hover span {
   border-bottom: unset;
 }
 
+body .epay_paymentmethod.first {
+  border-top: unset;
+}
+
+body .epay_paymentmethod {
+  height: unset;
+  border-top: unset;
+}
+
+body .epay_paymentmethod:hover {
+  background: unset;
+}
+
+body .epay_payment_logos {
+  width: unset;
+  text-align: unset;
+  margin-right: unset;
+  float: unset;
+}
+
+body .epay_paymentmethod .epay_payment_goto {
+  display: unset;
+  float: unset;
+  width: unset;
+}
+
+body .epay_paymentmethod_name {
+  padding-left: unset;
+  width: unset;
+  line-height: unset;
+  color: unset;
+  font-size: unset;
+  float: unset;
+  text-shadow: unset;
+  font-family: unset;
+}
+
+body .epay_paymentmethod .epay_payment_goto .epay_payment_goto_text {
+  float: unset;
+  padding-right: unset;
+  padding-left: unset;
+  padding-top: unset;
+  text-align: unset;
+  width: unset;
+}
+
+body
+  .epay_paymentmethod
+  .epay_payment_goto
+  .epay_payment_goto_button_container {
+  background: unset;
+  width: unset;
+  height: unset;
+  float: unset;
+}
+
+body .epay_payment_goto_button {
+  width: unset;
+  background: unset;
+  margin-top: unset;
+  margin-left: unset;
+  height: unset;
+}
+
+body .epay_payment_goto_button:hover {
+  background: unset;
+}
+
+body .epay_payment_goto_button span {
+  line-height: unset;
+  margin-left: unset;
+  color: unset;
+  font-family: unset;
+  text-shadow: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -1293,6 +1369,34 @@ html {
   border-bottom: 10px solid var(--success-color);
   border-right: 10px solid var(--success-color);
   margin: 0 auto 6px auto;
+}
+
+/* Select payment method page */
+#epay_main .epay_paymentmethod {
+  display: flex;
+  max-width: var(--max-width-main);
+  margin: 0 auto;
+  padding: 24px;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid;
+  border-color: #b8d8e1;
+  margin-top: 24px;
+  transition: border-color 0.3s;
+}
+
+#epay_main .epay_payment_goto {
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  flex-direction: column-reverse;
+  gap: 16px;
+}
+
+#epay_main .epay_paymentmethod:hover {
+  border-color: var(--brand-color);
 }
 
 /* Responsive styles */
