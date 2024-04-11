@@ -1303,9 +1303,8 @@ html {
 
 #epay_main a.epay_change_paymentmethod {
   color: var(--brand-color);
-  margin-top: 4px;
-  float: right;
   transition: opacity 0.3s;
+  margin: 4px 0 0 auto;
 }
 
 #epay_main a.epay_change_paymentmethod:hover {
@@ -1321,6 +1320,11 @@ html {
   #epay_paymentfooter_cardlogos
   img:first-of-type {
   padding-left: unset;
+}
+
+#epay_main #epay_paymentfooter_right {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Content bottom */
@@ -1706,8 +1710,13 @@ html {
   #epay_main #epay_paymentcards_form input {
     padding: 8px 12px;
   }
+
   #epay_main .epay_payment_goto {
     gap: 8px;
+  }
+
+  #epay_main a.epay_change_paymentmethod {
+    margin: 4px auto 0 auto;
   }
 }
 
