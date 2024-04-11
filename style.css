@@ -1,3 +1,8 @@
+/*  💣💣💣💣💣🧨🧨🧨🧨🧨 TEMPORARY FOR TESTING -- REMOVE 💣💣💣💣💣🧨🧨🧨🧨🧨 */
+#epay_main_content #epay_testmode_message {
+  display: none !important;
+}
+
 /* Variables */
 :root {
   --text-color: #020817;
@@ -1659,9 +1664,8 @@ html {
     max-height: 24px;
   }
 
-  /*  💣💣💣💣💣🧨🧨🧨🧨🧨 TEMPORARY FOR TESTING -- REMOVE 💣💣💣💣💣🧨🧨🧨🧨🧨 */
-  #epay_main_content #epay_testmode_message {
-    display: none !important;
+  #epay_main #epay_paymentcards_form input {
+    padding: 8px 12px;
   }
 }
 
