@@ -665,6 +665,11 @@ body .epay_payment_logos {
   float: unset;
 }
 
+body .epay_payment_logos {
+  /* Logos are already display: "none"; but Safari still adds extra gap */
+  height: 0;
+}
+
 body .epay_paymentmethod .epay_payment_goto {
   display: unset;
   float: unset;
