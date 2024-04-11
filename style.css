@@ -219,13 +219,14 @@ body .epay_payment_button:hover {
   background: unset;
 }
 
-body #epay_steps_list li.steps_list_1,
 body #epay_steps_list li.steps_list_1.currentstep1,
 body #epay_steps_list li.steps_list_1.currentstep2,
-body #epay_steps_list li.steps_list_2,
+body #epay_steps_list li.steps_list_1.currentstep3,
+body #epay_steps_list li.steps_list_2.currentstep1,
 body #epay_steps_list li.steps_list_2.currentstep2,
 body #epay_steps_list li.steps_list_2.currentstep3,
-body #epay_steps_list li.steps_list_3,
+body #epay_steps_list li.steps_list_3.currentstep1,
+body #epay_steps_list li.steps_list_3.currentstep2,
 body #epay_steps_list li.steps_list_3.currentstep3 {
   background: unset;
   width: unset;
@@ -1000,6 +1001,7 @@ html {
   font-size: 14px;
   color: var(--text-color-muted);
   user-select: none;
+  transition: all 0.3s;
 }
 
 #epay_main #epay_steps_list li.steps_list_1.currentstep1,
