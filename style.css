@@ -585,6 +585,22 @@ body .epay_error_button:hover {
   background: unset;
 }
 
+body a.epay_change_paymentmethod {
+  color: unset;
+  text-decoration: unset;
+}
+
+body a.epay_change_paymentmethod span {
+  height: unset;
+  float: unset;
+  border-bottom: unset;
+}
+
+body a.epay_change_paymentmethod:hover span {
+  float: unset;
+  border-bottom: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -1073,6 +1089,28 @@ html {
   content: "Dankort";
 }
 
+#epay_main a.epay_change_paymentmethod {
+  color: var(--brand-color);
+  margin-top: 4px;
+  float: right;
+  transition: opacity 0.3s;
+}
+
+#epay_main a.epay_change_paymentmethod:hover {
+  opacity: 0.8;
+}
+
+#epay_main #epay_paymentfooter_right #epay_paymentfooter_cardlogos img {
+  max-height: 24px;
+  padding-left: 4px;
+}
+#epay_main
+  #epay_paymentfooter_right
+  #epay_paymentfooter_cardlogos
+  img:first-of-type {
+  padding-left: unset;
+}
+
 /* Content bottom */
 #epay_main #epay_content_bottom {
   max-width: var(--max-width-content);
@@ -1341,10 +1379,6 @@ html {
   #epay_main #epay_paymentfooter_info div:nth-child(2) {
     padding-left: 8px;
     margin-left: auto;
-  }
-  #epay_main #epay_paymentfooter_cardlogos img {
-    max-width: 40px;
-    padding-left: 4px;
   }
 
   #epay_main #epay_paymentcollection {
