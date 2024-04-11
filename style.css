@@ -1505,7 +1505,7 @@ html {
   box-sizing: border-box;
   border-radius: var(--border-radius);
   border: 1px solid;
-  border-color: #b8d8e1;
+  border-color: var(--border-color);
   margin-top: 24px;
   transition: border-color 0.3s;
 }
