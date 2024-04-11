@@ -1103,10 +1103,16 @@ html {
 #epay_main #epay_paymentcards_form input {
   border: 1px solid;
   border-color: var(--border-color);
-  padding: 8px 12px;
+  padding: 12px 16px;
   border-radius: var(--border-radius);
-  font-size: 15px;
+  font-size: 16px;
   accent-color: var(--brand-color);
+}
+
+#epay_main #epay_paymentcards_form input:hover,
+#epay_main #epay_paymentcards_form input:focus-visible {
+  border-color: var(--brand-color);
+  outline-color: var(--brand-color);
 }
 
 #epay_main #epay_paymentcards_form label {
