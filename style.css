@@ -1338,6 +1338,7 @@ html {
   align-items: center;
   gap: 16px;
   color: var(--text-color-muted);
+  font-size: 14px;
 }
 
 #epay_main #epay_content_bottom_content_left,
