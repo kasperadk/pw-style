@@ -26,6 +26,11 @@ body {
   background-color: var(--bg-color);
 }
 
+body[style="background: rgb(167, 167, 167);"] {
+  /* Overruling specific inline styles */
+  background-color: var(--bg-color) !important;
+}
+
 /* "Unsetting" current styles */
 body,
 input {
