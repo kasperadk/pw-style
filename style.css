@@ -701,6 +701,73 @@ body #creditCardInfo {
   display: none;
 }
 
+body #epay_notpaymentcard_form {
+  margin-top: unset;
+  float: unset;
+  width: unset;
+}
+
+body #epay_notpaymentcard_form table {
+  width: unset;
+}
+
+body #epay_notpaymentcard_form table tr td {
+  width: unset;
+}
+
+body #epay_notpaymentcard_form table tr td span {
+  background: unset;
+  display: unset;
+  line-height: unset;
+  height: unset;
+}
+
+body .epay_large_radio table tr td span input,
+body #epay_notpaymentcard_form table tr td span input {
+  float: unset;
+  display: unset;
+}
+
+body #epay_notpaymentcard_form table tr td label {
+  display: unset;
+  width: unset;
+  line-height: unset;
+  height: unset;
+}
+
+body .epay_large_radio table tr td span .epay_radio_button,
+body .epay_large_radio table tr td span .epay_radio_button_checked,
+body #epay_notpaymentcard_form table tr td span .epay_radio_button,
+body #epay_notpaymentcard_form table tr td span .epay_radio_button_checked {
+  display: unset;
+  float: unset;
+  width: unset;
+  margin-left: unset;
+  height: unset;
+  background: unset;
+  display: none;
+}
+
+body .epay_large_radio table tr td span .epay_radio_button_checked,
+body #epay_notpaymentcard_form table tr td span .epay_radio_button_checked {
+  background: none;
+  display: none;
+}
+
+body #epay_notpaymentcard_form table tr td label img {
+  float: unset;
+  margin-top: unset;
+  margin-right: unset;
+  margin-left: unset;
+}
+
+body #epay_notpaymentcard_form table tr td label {
+  display: unset;
+  width: unset;
+  line-height: unset;
+  height: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -908,23 +975,6 @@ html {
 
 #epay_main .epay_close_button:hover {
   opacity: 0.8;
-}
-
-#epay_main #epay_paymentinfo {
-  max-width: var(--max-width-content);
-  width: 100%;
-  height: 97px;
-  top: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  padding: 8px 16px;
-  align-items: center;
-  pointer-events: none;
-  box-sizing: border-box;
 }
 
 #epay_main #epay_paymentinfo > div {
@@ -1409,6 +1459,29 @@ html {
 }
 
 /* Step 2: Not credit card (Other Payment options) */
+#epay_main #epay_notpaymentcard_form {
+  margin-bottom: 24px;
+}
+
+#epay_main #epay_notpaymentcard_form table {
+  width: 100%;
+}
+
+#epay_main #epay_notpaymentcard_form table tbody tr td span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 16px;
+}
+
+#epay_main #epay_notpaymentcard_form table tr td label {
+  display: flex;
+  align-items: center;
+}
+
+#epay_main #epay_notpaymentcard_form table tr td label img {
+  margin-right: 8px;
+}
 
 /* Select payment method page */
 #epay_main .epay_paymentmethod {
