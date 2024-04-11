@@ -1440,7 +1440,7 @@ html {
 }
 
 #epay_main .epay_payment_return_button:hover {
-  opacity: 0.8M;
+  opacity: 0.8;
 }
 
 #epay_main #epay_payment_accepted_header {
@@ -1695,13 +1695,28 @@ html {
 }
 
 @media print {
-  #epay_paymentfooter {
+  body #epay_main #epay_paymentfooter {
     display: none;
   }
-  .epay_payment_accepted_return {
+  body #epay_main .epay_payment_accepted_return {
     display: none;
   }
-  .epay_close_button {
+  body #epay_main .epay_close_button {
     display: none;
+  }
+
+  body #epay_payment_accepted_header_print {
+    background: none;
+    text-align: center;
+  }
+  body #epay_main #epay_content_bottom_language {
+    display: none;
+  }
+
+  body #epay_main #epay_payment_accepted,
+  body #epay_main #epay_accept,
+  body #epay_main #epay_accept_info_right,
+  body #epay_main #epay_accept_info_left {
+    border-color: transparent;
   }
 }
