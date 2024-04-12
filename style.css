@@ -22,13 +22,9 @@ body #creditCardInfo {
   --max-width-main: 768px;
 }
 
-body {
-  background-color: var(--bg-color);
-}
-
 body[style="background: rgb(167, 167, 167);"] {
   /* Overruling specific inline styles */
-  background-color: var(--bg-color) !important;
+  background-color: transparent !important;
 }
 
 /* "Unsetting" current styles */
@@ -804,6 +800,11 @@ body #epay_notpaymentcard_form table tr td label {
   height: unset;
 }
 
+body #epay_paymentfooter_info .ordertext {
+  color: unset;
+  font-size: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -821,6 +822,10 @@ html {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#epay_main {
+  background-color: var(--bg-color);
 }
 
 #epay_main input::placeholder {
@@ -1578,6 +1583,13 @@ html {
   padding-left: 16px;
 }
 
+/* Window state - Overlay */
+body#windowstate__overlay {
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
   #epay_main #epay_header_content_right {
@@ -1647,6 +1659,10 @@ html {
   }
   #epay_main #epay_steps_list li {
     padding: 8px;
+  }
+
+  #epay_main #epay_paymentfooter_info .ordertext {
+    font-style: italic;
   }
 
   #epay_main #epay_paymentfooter_info {
