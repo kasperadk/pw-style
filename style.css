@@ -24,7 +24,7 @@ body #creditCardInfo {
 
 body[style="background: rgb(167, 167, 167);"] {
   /* Overruling specific inline styles */
-  background-color: transparent !important;
+  background-color: var(--bg-color) !important;
 }
 
 /* "Unsetting" current styles */
@@ -824,7 +824,7 @@ html {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#epay_main {
+body {
   background-color: var(--bg-color);
 }
 
@@ -1032,35 +1032,24 @@ html {
 }
 
 #epay_main #epay_paymentinfo > div {
-  max-width: var(--max-width-content);
-  width: 100%;
-  height: 97px;
-  top: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  padding: 8px 16px;
-  align-items: center;
-  pointer-events: none;
-  box-sizing: border-box;
+  padding-bottom: 16px;
+  border-bottom: 1px solid;
+  margin-bottom: 16px;
+  border-color: var(--border-color);
 }
 
-#epay_main #epay_paymentinfo ul li {
+#epay_main #epay_paymentinfo ul {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  width: 100%;
+  text-align: center;
 }
-
-#epay_main #epay_paymentinfo ul li:not(:last-child) {
-  margin-bottom: 4px;
+#epay_main #epay_paymentinfo ul li {
+  flex-direction: column;
+  margin: 0 auto;
 }
-
 #epay_main #epay_paymentinfo ul li label {
-  margin-right: 16px;
-  font-size: 14px;
+  margin-right: 0;
 }
 
 #epay_main #epay_paymentinfo .total {
@@ -1586,8 +1575,19 @@ html {
 /* Window state - Overlay */
 body#windowstate__overlay {
   max-width: 1000px;
-  display: block;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#windowstate__overlay #epay_main {
+  height: unset;
+  border-radius: 4px;
+}
+
+#windowstate__overlay #epay_main #epay_header {
+  border-radius: 4px 4px 0 0;
 }
 
 /* Responsive styles */
@@ -1606,39 +1606,6 @@ body#windowstate__overlay {
   }
   #epay_main .epay_company_logo {
     display: none;
-  }
-  #epay_main #epay_paymentinfo > div {
-    position: unset;
-    top: unset;
-    left: unset;
-    right: unset;
-    padding: 0;
-    height: unset;
-    padding-bottom: 16px;
-    border-bottom: 1px solid;
-    margin-bottom: 16px;
-    border-color: var(--border-color);
-  }
-  #epay_main #epay_paymentinfo > div {
-    max-width: unset;
-    width: 100%;
-  }
-  #epay_main #epay_paymentinfo ul {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    text-align: center;
-  }
-  #epay_main #epay_paymentinfo ul li {
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  #epay_main #epay_paymentinfo ul li label {
-    margin-right: 0;
-  }
-
-  #epay_main #epay_paymentinfo ul li:not(:last-child) {
-    margin-bottom: 0;
   }
 
   #epay_main #epay_header {
