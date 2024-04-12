@@ -962,7 +962,6 @@ body {
 /* ePay Header */
 #epay_main #epay_header {
   background-color: #fff;
-  margin-bottom: 32px;
   padding: 8px 16px;
   border-bottom: 1px solid;
   border-color: var(--border-color);
@@ -1058,10 +1057,6 @@ body {
 }
 
 /* Content */
-#epay_main #epay_content_content {
-  padding: 0 16px;
-}
-
 #epay_main #epay_main_content {
   height: 100%;
   display: flex;
@@ -1073,6 +1068,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  margin: 32px;
 }
 
 #epay_steps {
@@ -1610,8 +1606,8 @@ body#windowstate__overlay {
     display: none;
   }
 
-  #epay_main #epay_header {
-    margin-bottom: 16px;
+  #epay_main #epay_content {
+    margin: 16px;
   }
   #epay_main #epay_steps_list {
     grid-template-columns: 1fr;
