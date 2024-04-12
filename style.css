@@ -806,6 +806,12 @@ body #epay_paymentfooter_info .ordertext {
   font-size: unset;
 }
 
+body .epay_payment_button_light {
+  margin-top: unset;
+  float: unset;
+  margin-left: unset;
+}
+
 /* Removing borders */
 #epay_header_top,
 #epay_content_bottom_bottom,
@@ -1126,7 +1132,8 @@ body {
   font-size: 14px;
 }
 
-#epay_main .epay_payment_button {
+#epay_main .epay_payment_button,
+#epay_main .epay_payment_button_light {
   background-color: var(--success-color);
   border-radius: var(--border-radius);
   width: 100%;
@@ -1135,10 +1142,13 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
+  color: #fff;
+  cursor: pointer;
   transition: opacity 0.3s;
 }
 
-#epay_main .epay_payment_button:hover {
+#epay_main .epay_payment_button:hover,
+#epay_main .epay_payment_button_light:hover {
   opacity: 0.8;
 }
 
@@ -1626,10 +1636,6 @@ body#windowstate__overlay {
     padding: 8px;
   }
 
-  #epay_main #epay_paymentfooter_info .ordertext {
-    font-style: italic;
-  }
-
   #epay_main #epay_paymentfooter_info {
     display: flex;
     width: 100%;
@@ -1640,9 +1646,10 @@ body#windowstate__overlay {
     margin-left: auto;
   }
 
-  #epay_main #epay_paymentfooter_info div:nth-child(2) {
-    padding-left: 8px;
+  #epay_main #epay_paymentfooter_info .ordertext:not(:empty) {
+    font-style: italic;
     margin-left: auto;
+    padding-left: 8px;
   }
 
   #epay_main #epay_paymentcollection {
