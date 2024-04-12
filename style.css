@@ -296,6 +296,7 @@ body #epay_paymentinfo_full ul li label {
   line-height: unset;
   font-family: unset;
   color: unset;
+  font-size: unset;
   width: unset;
   float: unset;
 }
@@ -1116,7 +1117,7 @@ body {
   flex-direction: column;
   max-width: var(--max-width-main);
   margin: 0 auto;
-  padding: 32px;
+  padding: 16px 32px 32px 32px;
   width: 100%;
   background-color: #fff;
   box-sizing: border-box;
@@ -1126,6 +1127,7 @@ body {
   border-left: 1px solid;
   border-radius: 0 0 4px 4px;
   border-color: var(--border-color);
+  font-size: 14px;
 }
 
 #epay_main .epay_payment_button {
