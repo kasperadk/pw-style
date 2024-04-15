@@ -820,6 +820,8 @@ body .epay_payment_button_light {
 #epay_content_top,
 #epay_content_bottom_top {
   display: none;
+  height: unset;
+  background: unset;
 }
 
 /* New styles start here */
@@ -1343,7 +1345,6 @@ body {
   max-width: var(--max-width-content);
   width: 100%;
   margin: 32px auto 0 auto;
-  padding: 16px;
   box-sizing: border-box;
 }
 
@@ -1588,15 +1589,26 @@ body#windowstate__overlay {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
+}
+
+#windowstate__overlay #epay_main #epay_content {
+  margin: 16px;
 }
 
 #windowstate__overlay #epay_main {
   height: unset;
   border-radius: 4px;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 #windowstate__overlay #epay_main #epay_header {
   border-radius: 4px 4px 0 0;
+}
+
+#windowstate__overlay #epay_main #epay_content_bottom_content_center {
+  display: none;
 }
 
 /* Responsive styles */
