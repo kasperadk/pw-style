@@ -1584,11 +1584,6 @@ body {
 
 /* Window state - Overlay */
 body#windowstate__overlay {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
 }
 
@@ -1601,6 +1596,8 @@ body#windowstate__overlay {
   border-radius: 4px;
   background-color: var(--bg-color);
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  margin: 32px auto;
+  max-width: 700px;
 }
 
 #windowstate__overlay #epay_main #epay_header {
@@ -1729,6 +1726,9 @@ body#windowstate__overlay {
   }
   #epay_main .epay_payment_goto img:not(:first-of-type) {
     padding-left: 8px;
+  }
+  body#windowstate__overlay {
+    margin: 0;
   }
 }
 
