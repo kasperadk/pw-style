@@ -1227,7 +1227,7 @@ body {
   position: absolute;
   top: 37px;
   right: 18px;
-  width: 36px;
+  width: 43px;
 }
 
 #epay_main #epay_paymentcards_form ul li[id*="exp_li"] {
@@ -1669,8 +1669,13 @@ body#windowstate__overlay {
     padding: 16px;
   }
 
+  #epay_main #epay_cvc_help {
+    top: 36px;
+    width: 32px;
+  }
+
   #epay_main #epay_cvc_help img {
-    display: none;
+    width: 32px;
   }
 
   #epay_main span.info {
