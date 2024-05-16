@@ -410,6 +410,7 @@ body #epay_main_content,
 
 body #epay_content_content {
   background: unset;
+  overflow: unset;
 }
 
 body .epay_tooltip {
@@ -1006,37 +1007,33 @@ body {
   color: var(--text-color);
 }
 
-#epay_main .epay_close_button::after {
-  content: "X";
-  pointer-events: none;
-  position: absolute;
-  line-height: 32px;
+#epay_main .epay_close_button {
+  display: none !important;
 }
 
-#epay_main .epay_close_button {
-  margin-right: 0;
+#epay_main .epay_cancel_button {
+  display: flex !important;
+  max-width: fit-content;
+  margin: 0 auto 32px auto;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: var(--text-color-muted);
+  cursor: pointer;
+  align-items: center;
+  padding: 0;
+  gap: 4px;
+  transition: opacity 0.3s;
+}
+
+#epay_main .epay_cancel_button:hover {
+  opacity: 0.8;
+}
+
+#epay_content_bottom_top {
   display: flex;
   justify-content: center;
-  font-size: 18px;
-  width: 32px;
-  height: 32px;
-  border-radius: 0 0 0 4px;
-  margin-top: 96px;
-  border: 1px solid;
-  border-color: var(--border-color);
-  background: #fff;
-  border-top: 0;
-  border-right: 0;
-}
-
-#epay_main .epay_close_button .close_button {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-#epay_main .epay_close_button:hover {
-  opacity: 0.8;
+  align-items: center;
 }
 
 #epay_main #epay_paymentinfo > div {
@@ -1062,6 +1059,11 @@ body {
 
 #epay_main #epay_paymentinfo .total {
   font-weight: 600;
+  display: none;
+}
+
+#epay_main #epay_paymentinfo > div:has(ul li:only-child) {
+  display: none;
 }
 
 /* Content */
@@ -1224,7 +1226,7 @@ body {
 #epay_main #epay_cvc_help {
   position: absolute;
   top: 37px;
-  right: 8px;
+  right: 18px;
   width: 36px;
 }
 
@@ -1346,6 +1348,10 @@ body {
   width: 100%;
   margin: 32px auto 0 auto;
   box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #epay_main #epay_content_bottom_content {
@@ -1618,9 +1624,6 @@ body#windowstate__overlay {
   }
   #epay_main #epay_header_content_left {
     margin-right: 0;
-  }
-  #epay_main .epay_close_button {
-    display: none !important;
   }
   #epay_main .epay_company_logo {
     display: none;
