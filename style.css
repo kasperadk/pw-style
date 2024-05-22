@@ -871,6 +871,7 @@ body {
   border-radius: var(--border-radius);
   background-color: #334155;
   right: 24px;
+  z-index: 9999;
 }
 
 #epay_main .epay_cardholder_customvalidation,
@@ -1259,6 +1260,8 @@ label[for="cvc"]:has(+ .invalid)::after,
   color: var(--error-color);
   text-align: center;
   border-radius: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 label[for="expmonth"]:has(+ .valid)::after {
@@ -1274,7 +1277,7 @@ label[for="expmonth"]:has(+ .valid)::after {
   background-size: cover;
 }
 
-.epay_cvc_input.valid,
+.epay_cvc_input.valid + #epay_cvc_help,
 .epay_cvc_input.invalid + #epay_cvc_help {
   display: none;
 }
