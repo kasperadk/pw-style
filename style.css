@@ -1274,7 +1274,8 @@ label[for="expmonth"]:has(+ .valid)::after {
   background-size: cover;
 }
 
-.epay_cvc_input.valid, .epay_cvc_input.invalid + #epay_cvc_help {
+.epay_cvc_input.valid,
+.epay_cvc_input.invalid + #epay_cvc_help {
   display: none;
 }
 
@@ -1853,25 +1854,22 @@ body.windowstate_Light {
   }
 
   label[for="cardholder"]:has(+ .invalid)::after,
-label[for="cardno"]:has(+ .invalid)::after,
-label[for="cvc"]:has(+ .invalid)::after,
-#epay_exp_seperator:has(+ .invalid)::after {
-  top: 37px;
+  label[for="cardno"]:has(+ .invalid)::after,
+  label[for="cvc"]:has(+ .invalid)::after,
+  #epay_exp_seperator:has(+ .invalid)::after {
+    top: 37px;
+  }
 }
 
-  /* Extra small device (iPhone 5) */
-  @media only screen and (max-width: 320px) {
-
-    label[for="cardholder"]:has(+ .valid)::after,
-    label[for="cardno"]:has(+ .valid)::after,
-    label[for="cvc"]:has(+ .valid)::after,
-    #epay_exp_seperator:has(+ .valid)::after,
-    label[for="expmonth"]:has(+ .valid)::after 
-     {
-      display: none;;
-     }
-
-
+/* Extra small device (iPhone 5) */
+@media only screen and (max-width: 320px) {
+  label[for="cardholder"]:has(+ .valid)::after,
+  label[for="cardno"]:has(+ .valid)::after,
+  label[for="cvc"]:has(+ .valid)::after,
+  #epay_exp_seperator:has(+ .valid)::after,
+  label[for="expmonth"]:has(+ .valid)::after {
+    display: none;
+  }
 }
 
 @media print {
