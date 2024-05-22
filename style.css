@@ -1243,6 +1243,19 @@ label[for="cvc"]:has(+ .valid)::after,
   background-size: cover;
 }
 
+label[for="expmonth"]:has(+ .valid)::after {
+  content: "";
+  background-image: url(./Images/general/check-green.svg);
+  width: 21px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: calc(50% + 20px);
+  top: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 label[for="cardholder"]:has(+ .invalid)::after,
 label[for="cardno"]:has(+ .invalid)::after,
 label[for="cvc"]:has(+ .invalid)::after,
@@ -1265,16 +1278,21 @@ label[for="cvc"]:has(+ .invalid)::after,
 }
 
 label[for="expmonth"]:has(+ .valid)::after {
-  content: "";
-  background-image: url(./Images/general/check-green.svg);
-  width: 21px;
-  height: 20px;
-  display: block;
+  content: "!";
+  width: 16px;
+  height: 16px;
+  display: flex;
   position: absolute;
   right: calc(50% + 20px);
   top: 40px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: var(--error-bg);
+  color: var(--error-color);
+  text-align: center;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .epay_cvc_input.valid + #epay_cvc_help,
@@ -1858,7 +1876,8 @@ body.windowstate_Light {
   label[for="cardholder"]:has(+ .invalid)::after,
   label[for="cardno"]:has(+ .invalid)::after,
   label[for="cvc"]:has(+ .invalid)::after,
-  #epay_exp_seperator:has(+ .invalid)::after {
+  #epay_exp_seperator:has(+ .invalid)::after,
+  label[for="expmonth"]:has(+ .valid)::after {
     top: 37px;
   }
   #epay_main .epay_cardholder_customvalidation,
