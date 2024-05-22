@@ -1226,6 +1226,7 @@ body {
   font-size: 12px;
 }
 
+label[for="cardholder"]:has(+ .valid)::after,
 label[for="cardno"]:has(+ .valid)::after,
 label[for="cvc"]:has(+ .valid)::after,
 #epay_exp_seperator:has(+ .valid)::after {
@@ -1236,8 +1237,28 @@ label[for="cvc"]:has(+ .valid)::after,
   display: block;
   position: absolute;
   right: 10px;
-  top: 38px;
+  top: 40px;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+label[for="cardholder"]:has(+ .invalid)::after,
+label[for="cardno"]:has(+ .invalid)::after,
+label[for="cvc"]:has(+ .invalid)::after,
+#epay_exp_seperator:has(+ .invalid)::after {
+  content: "!";
+  width: 16px;
+  height: 16px;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: var(--error-bg);
+  color: var(--error-color);
+  text-align: center;
+  border-radius: 100%;
 }
 
 label[for="expmonth"]:has(+ .valid)::after {
@@ -1248,11 +1269,12 @@ label[for="expmonth"]:has(+ .valid)::after {
   display: block;
   position: absolute;
   right: calc(50% + 20px);
-  top: 38px;
+  top: 40px;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.epay_cvc_input.valid + #epay_cvc_help {
+.epay_cvc_input.valid, .epay_cvc_input.invalid + #epay_cvc_help {
   display: none;
 }
 
@@ -1365,8 +1387,12 @@ label[for="expmonth"]:has(+ .valid)::after {
 
 #epay_main #epay_paymentfooter_right #epay_paymentfooter_cardlogos img {
   max-height: 24px;
-  padding-left: 4px;
   opacity: 0.35;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #fff;
+  border-color: #e2e8f0;
+  padding-left: 0;
 }
 #epay_main
   #epay_paymentfooter_right
@@ -1616,6 +1642,27 @@ label[for="expmonth"]:has(+ .valid)::after {
   flex-direction: column-reverse;
   gap: 16px;
   font-weight: 600;
+  position: relative;
+}
+
+.epay_payment_goto::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-image: url("./Images/general/chevron-right.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+#epay_main .epay_payment_goto_text img {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #e2e8f0;
 }
 
 #epay_main .epay_paymentmethod:hover {
@@ -1623,7 +1670,7 @@ label[for="expmonth"]:has(+ .valid)::after {
 }
 
 #epay_main .epay_payment_goto img:not(:first-of-type) {
-  padding-left: 16px;
+  margin-left: 16px;
 }
 
 /* Window state - Overlay */
@@ -1728,6 +1775,7 @@ body.windowstate_Light {
 
   #epay_main #epay_cvc_help {
     top: 36px;
+    right: 8px;
     width: 32px;
   }
 
@@ -1790,8 +1838,40 @@ body.windowstate_Light {
     margin: 4px auto 0 auto;
   }
   #epay_main .epay_payment_goto img:not(:first-of-type) {
-    padding-left: 8px;
+    margin-left: 8px;
   }
+  .epay_payment_goto::after {
+    display: none;
+  }
+
+  label[for="cardholder"]:has(+ .valid)::after,
+  label[for="cardno"]:has(+ .valid)::after,
+  label[for="cvc"]:has(+ .valid)::after,
+  #epay_exp_seperator:has(+ .valid)::after,
+  label[for="expmonth"]:has(+ .valid)::after {
+    top: 34px;
+  }
+
+  label[for="cardholder"]:has(+ .invalid)::after,
+label[for="cardno"]:has(+ .invalid)::after,
+label[for="cvc"]:has(+ .invalid)::after,
+#epay_exp_seperator:has(+ .invalid)::after {
+  top: 37px;
+}
+
+  /* Extra small device (iPhone 5) */
+  @media only screen and (max-width: 320px) {
+
+    label[for="cardholder"]:has(+ .valid)::after,
+    label[for="cardno"]:has(+ .valid)::after,
+    label[for="cvc"]:has(+ .valid)::after,
+    #epay_exp_seperator:has(+ .valid)::after,
+    label[for="expmonth"]:has(+ .valid)::after 
+     {
+      display: none;;
+     }
+
+
 }
 
 @media print {
