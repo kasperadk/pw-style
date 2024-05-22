@@ -1391,7 +1391,6 @@ label[for="expmonth"]:has(+ .valid)::after {
 
 #epay_main #epay_paymentfooter_right #epay_paymentfooter_cardlogos img {
   max-height: 24px;
-  opacity: 0.35;
   border: 1px solid;
   border-radius: 4px;
   background-color: #fff;
@@ -1853,7 +1852,7 @@ body.windowstate_Light {
   label[for="cvc"]:has(+ .valid)::after,
   #epay_exp_seperator:has(+ .valid)::after,
   label[for="expmonth"]:has(+ .valid)::after {
-    top: 34px;
+    top: 35px;
   }
 
   label[for="cardholder"]:has(+ .invalid)::after,
@@ -1861,6 +1860,13 @@ body.windowstate_Light {
   label[for="cvc"]:has(+ .invalid)::after,
   #epay_exp_seperator:has(+ .invalid)::after {
     top: 37px;
+  }
+  #epay_main .epay_cardholder_customvalidation,
+  #epay_main .epay_expmonth_customvalidation,
+  #epay_main .epay_expyear_customvalidation,
+  #epay_main .epay_cardno_customvalidation,
+  #epay_main .epay_cvc_customvalidation {
+    display: none !important;
   }
 }
 
