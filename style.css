@@ -1277,7 +1277,7 @@ label[for="cvc"]:has(+ .invalid)::after,
   align-items: center;
 }
 
-label[for="expmonth"]:has(+ .valid)::after {
+label[for="expmonth"]:has(+ .invalid)::after {
   content: "!";
   width: 16px;
   height: 16px;
