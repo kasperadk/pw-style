@@ -1,8 +1,3 @@
-/*  💣💣💣💣💣🧨🧨🧨🧨🧨 TEMPORARY FOR TESTING -- REMOVE 💣💣💣💣💣🧨🧨🧨🧨🧨 */
-#epay_main_content #epay_testmode_message {
-  display: none !important;
-}
-
 body #creditCardInfo {
   display: none !important;
 }
