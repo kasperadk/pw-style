@@ -879,13 +879,9 @@ body {
 #epay_main .epay_expmonth_customvalidation,
 #epay_main .epay_expyear_customvalidation,
 #epay_main .epay_cvc_customvalidation {
-  background-color: var(--error-color);
-  padding: 4px;
+  color: var(--error-color);
   top: 0px;
-  right: 30px;
-  border-radius: 4px 4px 0 0;
-  font-weight: 600;
-  color: #fff;
+  right: 24px;
 }
 
 /* Loader */
