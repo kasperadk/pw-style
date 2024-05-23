@@ -927,7 +927,7 @@ body {
 }
 
 #epay_main #epay_error {
-  background-color: var(--error-bg);
+  background-color: #fff;
   padding: 32px;
   border-radius: var(--border-radius);
   position: absolute;
@@ -1509,6 +1509,19 @@ label[for="expmonth"]:has(+ .invalid)::after {
 #epay_main #epay_content_bottom_language:hover,
 #epay_main #epay_languages_list li.active,
 #epay_main #epay_languages_list li:hover {
+  opacity: 0.8;
+}
+
+#epay_main #epay_content_bottom_security_at_epay {
+  display: flex !important;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-left: 16px;
+}
+
+#epay_main #epay_content_bottom_security_at_epay:hover {
   opacity: 0.8;
 }
 
