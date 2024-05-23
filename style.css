@@ -699,6 +699,7 @@ body .epay_paymentmethod .epay_payment_goto .epay_payment_goto_text {
 body .epay_paymentmethod .epay_payment_goto .epay_payment_goto_text {
   /* Hide unnecessary label next to payment logo */
   font-size: 0;
+  padding-top: 0 !important;
 }
 
 body
@@ -811,6 +812,10 @@ body .epay_payment_button_light {
   margin-top: unset;
   float: unset;
   margin-left: unset;
+}
+
+body #epay_content_bottom_secure {
+  display: none;
 }
 
 /* Removing borders */
@@ -1481,10 +1486,6 @@ label[for="expmonth"]:has(+ .invalid)::after {
   align-items: center;
 }
 
-#epay_main #epay_content_bottom_secure {
-  margin-left: 16px;
-}
-
 #epay_main #epay_content_bottom_content_center {
   pointer-events: none;
 }
@@ -1698,6 +1699,10 @@ label[for="expmonth"]:has(+ .invalid)::after {
   position: relative;
 }
 
+#epay_main .epay_paymentmethod:hover > .epay_payment_goto::after {
+  transform: translateX(8px);
+}
+
 .epay_payment_goto::after {
   content: "";
   position: absolute;
@@ -1710,6 +1715,7 @@ label[for="expmonth"]:has(+ .invalid)::after {
   top: 0;
   bottom: 0;
   margin: auto 0;
+  transition: 0.3s transform;
 }
 
 #epay_main .epay_payment_goto_text img {
