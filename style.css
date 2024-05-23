@@ -967,6 +967,14 @@ body {
   opacity: 0.8;
 }
 
+/* Test cards */
+#epay_main .cardnumber_test span img {
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #fff;
+  border-color: #e2e8f0;
+}
+
 /* Testmode message */
 #epay_main_content #epay_testmode_message {
   background-color: var(--error-bg);
@@ -1310,7 +1318,7 @@ label[for="expmonth"]:has(+ .invalid)::after {
 #epay_main #epay_cvc_help {
   position: absolute;
   top: 37px;
-  right: 18px;
+  right: 16px;
   width: 43px;
 }
 
