@@ -952,7 +952,7 @@ body {
 }
 
 #epay_main #epay_error_header::before {
-  content: url(./Images/general/circle-x-red.svg);
+  content: url(../../Images/general/circle-x-red.svg);
 }
 
 #epay_main #epay_error_text {
@@ -1251,7 +1251,7 @@ label[for="cardno"]:has(+ .valid)::after,
 label[for="cvc"]:has(+ .valid)::after,
 #epay_exp_seperator:has(+ .valid)::after {
   content: "";
-  background-image: url(./Images/general/check-green.svg);
+  background-image: url(../../Images/general/check-green.svg);
   width: 21px;
   height: 20px;
   display: block;
@@ -1264,7 +1264,7 @@ label[for="cvc"]:has(+ .valid)::after,
 
 label[for="expmonth"]:has(+ .valid)::after {
   content: "";
-  background-image: url(./Images/general/check-green.svg);
+  background-image: url(../../Images/general/check-green.svg);
   width: 21px;
   height: 20px;
   display: block;
@@ -1702,7 +1702,7 @@ label[for="expmonth"]:has(+ .invalid)::after {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url("./Images/general/chevron-right.svg");
+  background-image: url("../../Images/general/chevron-right.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
