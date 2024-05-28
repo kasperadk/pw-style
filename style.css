@@ -81,6 +81,7 @@ body #epay_testmode_message {
   width: unset;
   margin: unset;
   font-family: unset;
+  color: unset;
 }
 
 body .epay_close_button {
@@ -990,6 +991,10 @@ body {
   font-weight: 600;
   max-width: var(--max-width-main);
   margin: 0 auto 32px auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ePay Header */
