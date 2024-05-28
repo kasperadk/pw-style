@@ -1426,6 +1426,12 @@ label[for="expmonth"]:has(+ .invalid)::after {
   opacity: 0.8;
 }
 
+#epay_main a.epay_change_paymentmethod span {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 #epay_main #epay_paymentfooter_right #epay_paymentfooter_cardlogos img {
   max-height: 24px;
   border: 1px solid;
