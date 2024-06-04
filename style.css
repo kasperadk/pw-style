@@ -17,14 +17,15 @@ body #creditCardInfo {
   --max-width-main: 768px;
 }
 
-body[style="background: rgb(167, 167, 167);"] {
+body[style*="background"] {
   /* Overruling specific inline styles */
   background-color: var(--bg-color) !important;
 }
 
 /* "Unsetting" current styles */
 body,
-input {
+input,
+button {
   font-family: unset;
 }
 
