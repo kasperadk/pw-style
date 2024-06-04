@@ -1956,6 +1956,14 @@ body.windowstate_Light {
     display: none;
   }
 
+  body #epay_main .epay_cancel_button {
+    display: none !important;
+  }
+
+  body #epay_main #epay_content_bottom_security_at_epay {
+    display: none;
+  }
+
   body #epay_payment_accepted_header_print {
     background: none;
     text-align: center;
