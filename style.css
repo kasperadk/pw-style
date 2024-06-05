@@ -1961,7 +1961,7 @@ body.windowstate_Light {
   }
 
   body #epay_main #epay_content_bottom_security_at_epay {
-    display: none;
+    display: none !important;
   }
 
   body #epay_payment_accepted_header_print {
