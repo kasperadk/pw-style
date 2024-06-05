@@ -1478,11 +1478,11 @@ label[for="expmonth"]:has(+ .invalid)::after {
   font-size: 14px;
 }
 
-#epay_main #epay_content_bottom_content div {
+#epay_main #epay_content_bottom_content > div {
   margin-right: 16px;
 }
 
-#epay_main #epay_content_bottom_content div:last-child {
+#epay_main #epay_content_bottom_content > div:last-child {
   margin-right: 0;
 }
 
@@ -1943,11 +1943,12 @@ body.windowstate_Light {
     display: none !important;
   }
 
-  #epay_main #epay_content_bottom_content div {
+  #epay_main #epay_content_bottom_content > div {
     margin-bottom: 16px;
+    margin-right: 0;
   }
 
-  #epay_main #epay_content_bottom_content div:last-child {
+  #epay_main #epay_content_bottom_content > div:last-child {
     margin-bottom: 0;
   }
 }
