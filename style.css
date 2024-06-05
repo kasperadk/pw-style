@@ -1474,9 +1474,16 @@ label[for="expmonth"]:has(+ .invalid)::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
   color: var(--text-color-muted);
   font-size: 14px;
+}
+
+#epay_main #epay_content_bottom_content div {
+  margin-right: 16px;
+}
+
+#epay_main #epay_content_bottom_content div:last-child {
+  margin-right: 0;
 }
 
 #epay_main #epay_content_bottom_content_left,
@@ -1701,9 +1708,12 @@ label[for="expmonth"]:has(+ .invalid)::after {
   width: 100%;
   font-size: 18px;
   flex-direction: column-reverse;
-  gap: 16px;
   font-weight: 600;
   position: relative;
+}
+
+#epay_main .epay_payment_goto_button_container {
+  margin-bottom: 16px;
 }
 
 #epay_main .epay_paymentmethod:hover > .epay_payment_goto::after {
@@ -1931,6 +1941,14 @@ body.windowstate_Light {
   #epay_main .epay_cardno_customvalidation,
   #epay_main .epay_cvc_customvalidation {
     display: none !important;
+  }
+
+  #epay_main #epay_content_bottom_content div {
+    margin-bottom: 16px;
+  }
+
+  #epay_main #epay_content_bottom_content div:last-child {
+    margin-bottom: 0;
   }
 }
 
