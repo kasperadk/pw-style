@@ -1133,6 +1133,11 @@ body {
   color: var(--text-color-muted);
   user-select: none;
   transition: all 0.3s;
+  margin-right: 24px;
+}
+
+#epay_main #epay_steps_list li:last-child {
+  margin-right: 0;
 }
 
 #epay_main #epay_steps_list li.steps_list_1.currentstep1,
@@ -1814,8 +1819,17 @@ body.windowstate_Light {
   }
   #epay_main #epay_steps_list {
     grid-template-columns: 1fr;
-    gap: 12px;
   }
+
+  #epay_main #epay_steps_list li {
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
+
+  #epay_main #epay_steps_list li:last-child {
+    margin-bottom: 0;
+  }
+
   #epay_main #epay_paymentfooter {
     margin-top: 16px;
     padding: 16px;
