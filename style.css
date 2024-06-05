@@ -22,6 +22,11 @@ body[style*="background"] {
   background-color: var(--bg-color) !important;
 }
 
+/* Unsetting iOS styling */
+input {
+  -webkit-appearance: none;
+}
+
 /* "Unsetting" current styles */
 body,
 input,
@@ -1478,7 +1483,7 @@ label[for="expmonth"]:has(+ .invalid)::after {
 #epay_main #epay_content_bottom {
   max-width: var(--max-width-content);
   width: 100%;
-  padding-top: 32px;
+  padding: 32px 0;
   margin: 0 auto 0 auto;
   box-sizing: border-box;
   height: 100%;
