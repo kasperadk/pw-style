@@ -22,11 +22,6 @@ body[style*="background"] {
   background-color: var(--bg-color) !important;
 }
 
-/* Unsetting iOS styling */
-input {
-  -webkit-appearance: none;
-}
-
 /* "Unsetting" current styles */
 body,
 input,
@@ -383,6 +378,11 @@ body .epay_cvc_input,
 body .epay_cvc_input.valid,
 body .epay_cvc_input.invalid {
   background: unset;
+
+  /* Remove iOS default styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 body .epay_expmonth_input,
@@ -1199,6 +1199,11 @@ body {
   color: #fff;
   cursor: pointer;
   transition: opacity 0.3s;
+
+  /* Remove iOS default styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #epay_main .epay_payment_button:hover,
