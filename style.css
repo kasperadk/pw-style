@@ -977,6 +977,11 @@ body {
   transition: opacity 0.3s;
   font-size: 16px;
   font-weight: 600;
+
+  /* Remove iOS default styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 #epay_main .epay_error_button:hover {
   opacity: 0.8;
@@ -1049,7 +1054,7 @@ body {
 }
 
 #epay_main .epay_cancel_button {
-  display: flex !important;
+  display: inline-flex !important;
   max-width: fit-content;
   margin: 0 auto 32px auto;
   background: none;
@@ -1488,7 +1493,7 @@ label[for="expmonth"]:has(+ .invalid)::after {
 #epay_main #epay_content_bottom {
   max-width: var(--max-width-content);
   width: 100%;
-  padding: 32px 0;
+  padding-top: 32px;
   margin: 0 auto;
   box-sizing: border-box;
   height: 100%;
@@ -1886,12 +1891,8 @@ body.windowstate_Light {
     flex-direction: column;
   }
 
-  #epay_main #epay_paymentfooter {
+  #epay_main #epay_paymentfooter_info {
     padding-bottom: 8px;
-  }
-
-  #epay_main #epay_paymentfooter {
-    padding-bottom: 0;
   }
 
   #epay_main_content #epay_testmode_message {
@@ -1939,6 +1940,7 @@ body.windowstate_Light {
     flex-direction: column;
     text-align: center;
     padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   #epay_main #epay_accept {
@@ -2035,6 +2037,12 @@ body.windowstate_Light {
 
   #epay_main #epay_content_bottom {
     display: block;
+  }
+  #epay_main #epay_content_bottom_content_right {
+    display: block;
+  }
+  #epay_main #epay_content_bottom_language {
+    display: inline-flex;
   }
 }
 
