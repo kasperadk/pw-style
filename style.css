@@ -2038,9 +2038,6 @@ body.windowstate_Light {
   #epay_main #epay_content_bottom {
     display: block;
   }
-  #epay_main #epay_content_bottom_content_right {
-    display: block;
-  }
   #epay_main #epay_content_bottom_language {
     display: inline-flex;
   }
